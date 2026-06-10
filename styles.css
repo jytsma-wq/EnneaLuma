@@ -598,9 +598,14 @@ h3 {
   font-family: "Segoe UI", Tahoma, Arial, sans-serif;
 }
 
-[dir="rtl"] .official-copy {
+.official-copy[dir="ltr"] {
   direction: ltr;
   text-align: left;
+}
+
+.official-copy[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
 }
 
 [dir="rtl"] .hero-actions,

@@ -1,6 +1,153 @@
 const EMAIL = "contact@ennealuma.com";
 const CONSULTATION_MAILTO = "mailto:contact@ennealuma.com?subject=Free%20Consultation%20Request%20-%20EnneaLuma&body=Hello%20EnneaLuma%2C%0A%0AI%20would%20like%20to%20request%20my%20free%20first%20consultation.%0A%0AName%3A%0APreferred%20language%3A%0AMain%20question%3A%0APreferred%20contact%20method%3A%0A%0AThank%20you.";
 
+const officialTexts = {
+  en: `Welcome to the international project dedicated to the psychomatrix, spiritual development, self-discovery, and various esoteric fields.
+This website was created as one of the first international social projects in the field of the psychomatrix and esotericism, with the aim of bringing together people who are interested in spiritual development, energy practices, inner harmony, and finding answers to important life questions.
+On this website, you will be able to explore various areas, including:
+* the psychomatrix and personality analysis;
+* spiritual practices and self-discovery;
+* cleansing of negative energy;
+* exorcism prayers and spiritual protection;
+* clairvoyance and intuitive consultations;
+* energy practices;
+* spiritual support and other related fields.
+Our goal is to create a space where people can receive information, support, understanding, and the opportunity to look at their lives from a new perspective, better understand themselves, discover their strengths, inner resources, and life path.
+For the convenience of an international audience, the website will be available in several languages: German, French, English, Spanish, Italian, Arabic, Chinese, and Luxembourgish.
+The website design will feature light green and purple tones, symbolizing harmony, inner peace, spiritual growth, intuition, and balance.
+The first full consultation will be completely free of charge so that everyone can become familiar with the project, ask questions, and experience an initial consultation. Starting from the second consultation, services will be provided on a paid basis.
+Important:
+This activity is not related to medicine, does not constitute a medical service, and does not replace medical assistance, diagnosis, psychotherapy, or treatment. All materials, consultations, and spiritual practices presented on this website are intended solely for informational, spiritual, and introductory purposes.
+We believe that spiritual development, self-discovery, and understanding one’s inner energy can help people better understand themselves, make more conscious decisions, and find inner harmony.
+This project is being created with great responsibility, care for people, and a sincere desire to build an international space for spiritual exploration, understanding, and development.`,
+  de: `Willkommen beim internationalen Projekt, das der Psychomatrix, der spirituellen Entwicklung, der Selbsterkenntnis und verschiedenen esoterischen Bereichen gewidmet ist.
+Diese Website wurde als eines der ersten internationalen sozialen Projekte im Bereich der Psychomatrix und Esoterik geschaffen, mit dem Ziel, Menschen zusammenzubringen, die sich für spirituelle Entwicklung, Energiepraktiken, innere Harmonie und das Finden von Antworten auf wichtige Lebensfragen interessieren.
+Auf dieser Website können Sie verschiedene Bereiche erkunden, darunter:
+* die Psychomatrix und Persönlichkeitsanalyse;
+* spirituelle Praktiken und Selbsterkenntnis;
+* Reinigung von negativer Energie;
+* Exorzismusgebete und spiritueller Schutz;
+* Hellsichtigkeit und intuitive Beratungen;
+* Energiepraktiken;
+* spirituelle Unterstützung und andere verwandte Bereiche.
+Unser Ziel ist es, einen Raum zu schaffen, in dem Menschen Informationen, Unterstützung, Verständnis und die Möglichkeit erhalten können, ihr Leben aus einer neuen Perspektive zu betrachten, sich selbst besser zu verstehen, ihre Stärken, inneren Ressourcen und ihren Lebensweg zu entdecken.
+Für die Bequemlichkeit eines internationalen Publikums wird die Website in mehreren Sprachen verfügbar sein: Deutsch, Französisch, Englisch, Spanisch, Italienisch, Arabisch, Chinesisch und Luxemburgisch.
+Das Website-Design wird helle Grün- und Violetttöne enthalten, die Harmonie, inneren Frieden, spirituelles Wachstum, Intuition und Balance symbolisieren.
+Die erste vollständige Beratung wird völlig kostenlos sein, damit jeder das Projekt kennenlernen, Fragen stellen und eine erste Beratung erleben kann. Ab der zweiten Beratung werden die Leistungen kostenpflichtig angeboten.
+Wichtig:
+Diese Tätigkeit steht nicht mit Medizin in Verbindung, stellt keine medizinische Dienstleistung dar und ersetzt keine medizinische Hilfe, Diagnose, Psychotherapie oder Behandlung. Alle auf dieser Website vorgestellten Materialien, Beratungen und spirituellen Praktiken dienen ausschließlich Informations-, spirituellen und Einführungszwecken.
+Wir glauben, dass spirituelle Entwicklung, Selbsterkenntnis und das Verständnis der eigenen inneren Energie Menschen helfen können, sich selbst besser zu verstehen, bewusstere Entscheidungen zu treffen und innere Harmonie zu finden.
+Dieses Projekt wird mit großer Verantwortung, Fürsorge für Menschen und dem aufrichtigen Wunsch geschaffen, einen internationalen Raum für spirituelle Erforschung, Verständnis und Entwicklung aufzubauen.`,
+  fr: `Bienvenue dans le projet international dédié à la psychomatrix, au développement spirituel, à la découverte de soi et à divers domaines ésotériques.
+Ce site web a été créé comme l’un des premiers projets sociaux internationaux dans le domaine de la psychomatrix et de l’ésotérisme, avec pour objectif de réunir des personnes intéressées par le développement spirituel, les pratiques énergétiques, l’harmonie intérieure et la recherche de réponses aux grandes questions de la vie.
+Sur ce site web, vous pourrez explorer différents domaines, notamment :
+* la psychomatrix et l’analyse de la personnalité ;
+* les pratiques spirituelles et la découverte de soi ;
+* la purification de l’énergie négative ;
+* les prières d’exorcisme et la protection spirituelle ;
+* la clairvoyance et les consultations intuitives ;
+* les pratiques énergétiques ;
+* le soutien spirituel et d’autres domaines connexes.
+Notre objectif est de créer un espace où les personnes peuvent recevoir des informations, du soutien, de la compréhension et la possibilité de regarder leur vie sous un nouvel angle, de mieux se comprendre, de découvrir leurs forces, leurs ressources intérieures et leur chemin de vie.
+Pour le confort d’un public international, le site web sera disponible en plusieurs langues : allemand, français, anglais, espagnol, italien, arabe, chinois et luxembourgeois.
+Le design du site web utilisera des tons vert clair et violets, symbolisant l’harmonie, la paix intérieure, la croissance spirituelle, l’intuition et l’équilibre.
+La première consultation complète sera entièrement gratuite afin que chacun puisse se familiariser avec le projet, poser des questions et vivre une première consultation. À partir de la deuxième consultation, les services seront fournis sur une base payante.
+Important :
+Cette activité n’est pas liée à la médecine, ne constitue pas un service médical et ne remplace pas l’assistance médicale, le diagnostic, la psychothérapie ou le traitement. Tous les supports, consultations et pratiques spirituelles présentés sur ce site web sont destinés uniquement à des fins informatives, spirituelles et introductives.
+Nous croyons que le développement spirituel, la découverte de soi et la compréhension de son énergie intérieure peuvent aider les personnes à mieux se comprendre, à prendre des décisions plus conscientes et à trouver l’harmonie intérieure.
+Ce projet est créé avec une grande responsabilité, de l’attention envers les personnes et le désir sincère de construire un espace international d’exploration, de compréhension et de développement spirituels.`,
+  es: `Bienvenido al proyecto internacional dedicado a la psychomatrix, el desarrollo espiritual, el autodescubrimiento y diversos campos esotéricos.
+Este sitio web fue creado como uno de los primeros proyectos sociales internacionales en el campo de la psychomatrix y el esoterismo, con el objetivo de reunir a personas interesadas en el desarrollo espiritual, las prácticas energéticas, la armonía interior y la búsqueda de respuestas a preguntas importantes de la vida.
+En este sitio web podrás explorar diversas áreas, entre ellas:
+* la psychomatrix y el análisis de la personalidad;
+* prácticas espirituales y autodescubrimiento;
+* limpieza de energía negativa;
+* oraciones de exorcismo y protección espiritual;
+* clarividencia y consultas intuitivas;
+* prácticas energéticas;
+* apoyo espiritual y otros campos relacionados.
+Nuestro objetivo es crear un espacio donde las personas puedan recibir información, apoyo, comprensión y la oportunidad de mirar su vida desde una nueva perspectiva, comprenderse mejor, descubrir sus fortalezas, recursos internos y camino de vida.
+Para la comodidad de una audiencia internacional, el sitio web estará disponible en varios idiomas: alemán, francés, inglés, español, italiano, árabe, chino y luxemburgués.
+El diseño del sitio web presentará tonos verde claro y púrpura, que simbolizan armonía, paz interior, crecimiento espiritual, intuición y equilibrio.
+La primera consulta completa será totalmente gratuita para que todos puedan familiarizarse con el proyecto, hacer preguntas y experimentar una consulta inicial. A partir de la segunda consulta, los servicios se prestarán de forma pagada.
+Importante:
+Esta actividad no está relacionada con la medicina, no constituye un servicio médico y no reemplaza la asistencia médica, el diagnóstico, la psicoterapia ni el tratamiento. Todos los materiales, consultas y prácticas espirituales presentados en este sitio web están destinados exclusivamente a fines informativos, espirituales e introductorios.
+Creemos que el desarrollo espiritual, el autodescubrimiento y la comprensión de la propia energía interior pueden ayudar a las personas a comprenderse mejor, tomar decisiones más conscientes y encontrar armonía interior.
+Este proyecto se está creando con gran responsabilidad, cuidado por las personas y un deseo sincero de construir un espacio internacional para la exploración, la comprensión y el desarrollo espiritual.`,
+  it: `Benvenuti nel progetto internazionale dedicato alla psychomatrix, allo sviluppo spirituale, alla scoperta di sé e a vari ambiti esoterici.
+Questo sito web è stato creato come uno dei primi progetti sociali internazionali nel campo della psychomatrix e dell’esoterismo, con l’obiettivo di riunire persone interessate allo sviluppo spirituale, alle pratiche energetiche, all’armonia interiore e alla ricerca di risposte a importanti domande della vita.
+Su questo sito web potrai esplorare diverse aree, tra cui:
+* la psychomatrix e l’analisi della personalità;
+* pratiche spirituali e scoperta di sé;
+* purificazione dall’energia negativa;
+* preghiere di esorcismo e protezione spirituale;
+* chiaroveggenza e consultazioni intuitive;
+* pratiche energetiche;
+* supporto spirituale e altri ambiti correlati.
+Il nostro obiettivo è creare uno spazio in cui le persone possano ricevere informazioni, supporto, comprensione e l’opportunità di guardare la propria vita da una nuova prospettiva, comprendere meglio se stesse, scoprire i propri punti di forza, le risorse interiori e il percorso di vita.
+Per la comodità di un pubblico internazionale, il sito web sarà disponibile in diverse lingue: tedesco, francese, inglese, spagnolo, italiano, arabo, cinese e lussemburghese.
+Il design del sito web presenterà toni verde chiaro e viola, che simboleggiano armonia, pace interiore, crescita spirituale, intuizione ed equilibrio.
+La prima consultazione completa sarà completamente gratuita affinché tutti possano familiarizzare con il progetto, fare domande e vivere una consultazione iniziale. A partire dalla seconda consultazione, i servizi saranno forniti a pagamento.
+Importante:
+Questa attività non è collegata alla medicina, non costituisce un servizio medico e non sostituisce assistenza medica, diagnosi, psicoterapia o trattamento. Tutti i materiali, le consultazioni e le pratiche spirituali presentati su questo sito web sono destinati esclusivamente a scopi informativi, spirituali e introduttivi.
+Crediamo che lo sviluppo spirituale, la scoperta di sé e la comprensione della propria energia interiore possano aiutare le persone a comprendere meglio se stesse, prendere decisioni più consapevoli e trovare armonia interiore.
+Questo progetto viene creato con grande responsabilità, cura per le persone e un sincero desiderio di costruire uno spazio internazionale per l’esplorazione, la comprensione e lo sviluppo spirituale.`,
+  ar: `مرحبًا بكم في المشروع الدولي المخصص للمصفوفة النفسية، والتطور الروحي، واكتشاف الذات، ومختلف المجالات الباطنية.
+تم إنشاء هذا الموقع بوصفه أحد أوائل المشاريع الاجتماعية الدولية في مجال المصفوفة النفسية والباطنية، بهدف جمع الأشخاص المهتمين بالتطور الروحي، وممارسات الطاقة، والانسجام الداخلي، والبحث عن إجابات لأسئلة الحياة المهمة.
+على هذا الموقع، ستتمكنون من استكشاف مجالات مختلفة، بما في ذلك:
+* المصفوفة النفسية وتحليل الشخصية؛
+* الممارسات الروحية واكتشاف الذات؛
+* تطهير الطاقة السلبية؛
+* صلوات طرد الأرواح والحماية الروحية؛
+* الاستبصار والاستشارات الحدسية؛
+* ممارسات الطاقة؛
+* الدعم الروحي ومجالات أخرى ذات صلة.
+هدفنا هو إنشاء مساحة يستطيع فيها الناس تلقي المعلومات والدعم والتفهم، والحصول على فرصة للنظر إلى حياتهم من منظور جديد، وفهم أنفسهم بشكل أفضل، واكتشاف نقاط قوتهم ومواردهم الداخلية ومسار حياتهم.
+من أجل راحة الجمهور الدولي، سيكون الموقع متاحًا بعدة لغات: الألمانية، والفرنسية، والإنجليزية، والإسبانية، والإيطالية، والعربية، والصينية، واللوكسمبورغية.
+سيتميز تصميم الموقع بدرجات من الأخضر الفاتح والبنفسجي، ترمز إلى الانسجام، والسلام الداخلي، والنمو الروحي، والحدس، والتوازن.
+ستكون الاستشارة الكاملة الأولى مجانية تمامًا حتى يتمكن الجميع من التعرف إلى المشروع، وطرح الأسئلة، وتجربة استشارة أولية. ابتداءً من الاستشارة الثانية، ستُقدَّم الخدمات على أساس مدفوع.
+مهم:
+هذا النشاط غير مرتبط بالطب، ولا يشكل خدمة طبية، ولا يحل محل المساعدة الطبية أو التشخيص أو العلاج النفسي أو العلاج. جميع المواد والاستشارات والممارسات الروحية المعروضة على هذا الموقع مخصصة فقط لأغراض معلوماتية وروحية وتمهيدية.
+نؤمن بأن التطور الروحي، واكتشاف الذات، وفهم الطاقة الداخلية للفرد يمكن أن تساعد الناس على فهم أنفسهم بشكل أفضل، واتخاذ قرارات أكثر وعيًا، وإيجاد الانسجام الداخلي.
+يتم إنشاء هذا المشروع بمسؤولية كبيرة، ورعاية للناس، ورغبة صادقة في بناء مساحة دولية للاستكشاف والفهم والتطور الروحي.`,
+  zh: `欢迎来到这个致力于心理矩阵、灵性发展、自我发现以及各种神秘学领域的国际项目。
+本网站创建为心理矩阵与神秘学领域最早的国际社会项目之一，旨在汇聚对灵性发展、能量实践、内在和谐以及寻找重要人生问题答案感兴趣的人们。
+在本网站上，您将能够探索多个领域，包括：
+* 心理矩阵和人格分析；
+* 灵性实践和自我发现；
+* 清理负面能量；
+* 驱魔祈祷和灵性保护；
+* 灵视能力和直觉咨询；
+* 能量实践；
+* 灵性支持及其他相关领域。
+我们的目标是创建一个空间，让人们能够获得信息、支持、理解，并有机会从新的角度看待自己的生活，更好地了解自己，发现自己的优势、内在资源和人生道路。
+为了方便国际受众，本网站将提供多种语言版本：德语、法语、英语、西班牙语、意大利语、阿拉伯语、中文和卢森堡语。
+网站设计将采用浅绿色和紫色调，象征和谐、内在平静、灵性成长、直觉和平衡。
+第一次完整咨询将完全免费，以便每个人都能熟悉该项目、提出问题并体验初始咨询。从第二次咨询开始，服务将以付费方式提供。
+重要：
+本活动与医学无关，不构成医疗服务，也不能替代医疗帮助、诊断、心理治疗或治疗。本网站展示的所有材料、咨询和灵性实践仅用于信息、灵性和介绍性目的。
+我们相信，灵性发展、自我发现以及对自身内在能量的理解，可以帮助人们更好地了解自己，做出更有意识的决定，并找到内在和谐。
+本项目正在以高度的责任感、对人的关怀以及真诚的愿望创建，旨在建立一个用于灵性探索、理解和发展的国际空间。`,
+  lb: `Wëllkomm beim internationale Projet, deen der Psychomatrix, der spiritueller Entwécklung, der Selbstentdeckung an verschiddenen esoteresche Beräicher gewidmet ass.
+Dës Websäit gouf als ee vun den éischten internationale soziale Projeten am Beräich vun der Psychomatrix an der Esoterik erstallt, mam Zil Leit zesummenzebréngen, déi sech fir spirituell Entwécklung, Energiepraktiken, bannescht Harmonie an d’Sich no Äntwerten op wichteg Liewensfroen interesséieren.
+Op dëser Websäit kënnt Dir verschidde Beräicher entdecken, dorënner:
+* d’Psychomatrix an d’Perséinlechkeetsanalys;
+* spirituell Praktiken a Selbstentdeckung;
+* Botzung vun negativer Energie;
+* Exorzismus-Gebieder a spirituelle Schutz;
+* Hellsiichtegkeet an intuitiv Consultatiounen;
+* Energiepraktiken;
+* spirituell Ënnerstëtzung an aner verbonnen Beräicher.
+Eist Zil ass et, e Raum ze schafen, wou Leit Informatioun, Ënnerstëtzung, Verständnis an d’Méiglechkeet kréien, hiert Liewen aus enger neier Perspektiv ze kucken, sech selwer besser ze verstoen, hir Stäerkten, bannenzeg Ressourcen an hire Liewenswee ze entdecken.
+Fir de Komfort vun engem internationale Publikum wäert d’Websäit a verschiddene Sprooche verfügbar sinn: Däitsch, Franséisch, Englesch, Spuenesch, Italienesch, Arabesch, Chinesesch a Lëtzebuergesch.
+Den Design vun der Websäit wäert hellgréng a violett Téin enthalen, déi Harmonie, bannesche Fridden, spirituellt Wuesstem, Intuitioun a Gläichgewiicht symboliséieren.
+Déi éischt voll Consultatioun wäert komplett gratis sinn, fir datt jidderee sech mam Projet vertraut maache kann, Froen stelle kann an eng éischt Consultatioun erliewe kann. Vun der zweeter Consultatioun un ginn d’Servicer op bezuelter Basis ugebueden.
+Wichteg:
+Dës Aktivitéit huet kee Bezuch zur Medezin, ass kee medezinesche Service a ersetzt keng medezinesch Hëllef, Diagnos, Psychotherapie oder Behandlung. All Materialien, Consultatiounen a spirituell Praktiken, déi op dëser Websäit presentéiert ginn, si just fir informativ, spirituell an aféierend Zwecker geduecht.
+Mir gleewen, datt spirituell Entwécklung, Selbstentdeckung an d’Verständnis vun der eegener bannenzeger Energie de Leit hëllefe kënnen, sech selwer besser ze verstoen, méi bewosst Entscheedungen ze treffen an bannescht Harmonie ze fannen.
+Dëse Projet gëtt mat grousser Verantwortung, Suerg ëm d’Leit an engem oprichtege Wonsch erstallt, en internationale Raum fir spirituell Exploratioun, Verständnis an Entwécklung opzebauen.`
+};
+
 const translations = {
   en: {
     documentTitle: "EnneaLuma | Psychomatrix, clarity and inner balance",
@@ -17,7 +164,8 @@ const translations = {
     secondaryCta: "Contact EnneaLuma",
     heroNote: "The first full consultation is free.",
     officialTitle: "Official project text",
-    officialIntro: "Published in English exactly as the official project text.",
+    officialIntro: "Use the language selector to read this project text in each supported language.",
+    officialText: officialTexts.en,
     consultationTitle: "Free consultation",
     consultationBody: "The first full consultation is free of charge. Ask questions, get to know the project, and experience an initial consultation.",
     emailFallback: "If the button does not open your email app, please send your message directly to contact@ennealuma.com.",
@@ -29,7 +177,7 @@ const translations = {
     paymentNote: "Use this PayPal.Me link after confirming the paid consultation by e-mail.",
     paypalCta: "Pay with PayPal",
     languagesTitle: "Language selector",
-    languagesBody: "Choose your preferred interface language. The official English project text remains published literally.",
+    languagesBody: "Choose your preferred interface language. The project text changes with the selected language.",
     contactTitle: "Contact",
     contactBody: "For communication and consultation requests, write to contact@ennealuma.com.",
     emailLabel: "Email",
@@ -54,7 +202,8 @@ const translations = {
     secondaryCta: "EnneaLuma kontaktieren",
     heroNote: "Die erste vollständige Beratung ist kostenlos.",
     officialTitle: "Offizieller Projekttext",
-    officialIntro: "Auf Englisch genau so veröffentlicht wie der offizielle Projekttext.",
+    officialIntro: "Nutzen Sie die Sprachauswahl, um diesen Projekttext in jeder unterstützten Sprache zu lesen.",
+    officialText: officialTexts.de,
     consultationTitle: "Kostenlose Beratung",
     consultationBody: "Die erste vollständige Beratung ist kostenlos. Stellen Sie Fragen, lernen Sie das Projekt kennen und erleben Sie eine erste Beratung.",
     emailFallback: "Wenn der Button Ihre E-Mail-App nicht öffnet, senden Sie Ihre Nachricht bitte direkt an contact@ennealuma.com.",
@@ -66,7 +215,7 @@ const translations = {
     paymentNote: "Verwenden Sie diesen PayPal.Me-Link nach Bestätigung der kostenpflichtigen Beratung per E-Mail.",
     paypalCta: "Mit PayPal bezahlen",
     languagesTitle: "Sprachauswahl",
-    languagesBody: "Wählen Sie Ihre bevorzugte Sprache für die Oberfläche. Der offizielle englische Projekttext bleibt wortgetreu veröffentlicht.",
+    languagesBody: "Wählen Sie Ihre bevorzugte Sprache für die Oberfläche. Der Projekttext wechselt mit der ausgewählten Sprache.",
     contactTitle: "Kontakt",
     contactBody: "Für Kommunikation und Beratungsanfragen schreiben Sie an contact@ennealuma.com.",
     emailLabel: "E-Mail",
@@ -91,7 +240,8 @@ const translations = {
     secondaryCta: "Contacter EnneaLuma",
     heroNote: "La première consultation complète est gratuite.",
     officialTitle: "Texte officiel du projet",
-    officialIntro: "Publié en anglais exactement comme le texte officiel du projet.",
+    officialIntro: "Utilisez le sélecteur de langue pour lire ce texte du projet dans chaque langue prise en charge.",
+    officialText: officialTexts.fr,
     consultationTitle: "Consultation gratuite",
     consultationBody: "La première consultation complète est gratuite. Posez vos questions, découvrez le projet et vivez une première consultation.",
     emailFallback: "Si le bouton n'ouvre pas votre application e-mail, veuillez envoyer votre message directement à contact@ennealuma.com.",
@@ -103,7 +253,7 @@ const translations = {
     paymentNote: "Utilisez ce lien PayPal.Me après confirmation de la consultation payante par e-mail.",
     paypalCta: "Payer avec PayPal",
     languagesTitle: "Sélecteur de langue",
-    languagesBody: "Choisissez votre langue d'interface préférée. Le texte officiel anglais reste publié littéralement.",
+    languagesBody: "Choisissez votre langue d'interface préférée. Le texte du projet change avec la langue sélectionnée.",
     contactTitle: "Contact",
     contactBody: "Pour toute communication et demande de consultation, écrivez à contact@ennealuma.com.",
     emailLabel: "E-mail",
@@ -128,7 +278,8 @@ const translations = {
     secondaryCta: "Contactar con EnneaLuma",
     heroNote: "La primera consulta completa es gratuita.",
     officialTitle: "Texto oficial del proyecto",
-    officialIntro: "Publicado en inglés exactamente como el texto oficial del proyecto.",
+    officialIntro: "Usa el selector de idioma para leer este texto del proyecto en cada idioma disponible.",
+    officialText: officialTexts.es,
     consultationTitle: "Consulta gratuita",
     consultationBody: "La primera consulta completa es gratuita. Haz preguntas, conoce el proyecto y vive una consulta inicial.",
     emailFallback: "Si el botón no abre tu aplicación de email, envía tu mensaje directamente a contact@ennealuma.com.",
@@ -140,7 +291,7 @@ const translations = {
     paymentNote: "Usa este enlace de PayPal.Me después de confirmar la consulta pagada por email.",
     paypalCta: "Pagar con PayPal",
     languagesTitle: "Selector de idioma",
-    languagesBody: "Elige tu idioma de interfaz preferido. El texto oficial en inglés permanece publicado literalmente.",
+    languagesBody: "Elige tu idioma de interfaz preferido. El texto del proyecto cambia con el idioma seleccionado.",
     contactTitle: "Contacto",
     contactBody: "Para comunicación y solicitudes de consulta, escribe a contact@ennealuma.com.",
     emailLabel: "Email",
@@ -165,7 +316,8 @@ const translations = {
     secondaryCta: "Contatta EnneaLuma",
     heroNote: "La prima consultazione completa è gratuita.",
     officialTitle: "Testo ufficiale del progetto",
-    officialIntro: "Pubblicato in inglese esattamente come il testo ufficiale del progetto.",
+    officialIntro: "Usa il selettore della lingua per leggere questo testo del progetto in ogni lingua supportata.",
+    officialText: officialTexts.it,
     consultationTitle: "Consultazione gratuita",
     consultationBody: "La prima consultazione completa è gratuita. Fai domande, conosci il progetto e vivi una consultazione iniziale.",
     emailFallback: "Se il pulsante non apre la tua app email, invia il messaggio direttamente a contact@ennealuma.com.",
@@ -177,7 +329,7 @@ const translations = {
     paymentNote: "Usa questo link PayPal.Me dopo la conferma via email della consultazione a pagamento.",
     paypalCta: "Paga con PayPal",
     languagesTitle: "Selettore lingua",
-    languagesBody: "Scegli la lingua dell'interfaccia che preferisci. Il testo ufficiale inglese rimane pubblicato letteralmente.",
+    languagesBody: "Scegli la lingua dell'interfaccia che preferisci. Il testo del progetto cambia con la lingua selezionata.",
     contactTitle: "Contatto",
     contactBody: "Per comunicazioni e richieste di consultazione, scrivi a contact@ennealuma.com.",
     emailLabel: "Email",
@@ -202,7 +354,8 @@ const translations = {
     secondaryCta: "تواصل مع EnneaLuma",
     heroNote: "الاستشارة الكاملة الأولى مجانية.",
     officialTitle: "النص الرسمي للمشروع",
-    officialIntro: "منشور باللغة الإنجليزية تمامًا كما هو النص الرسمي للمشروع.",
+    officialIntro: "استخدم محدد اللغة لقراءة نص المشروع هذا بكل لغة مدعومة.",
+    officialText: officialTexts.ar,
     consultationTitle: "استشارة مجانية",
     consultationBody: "الاستشارة الكاملة الأولى مجانية. يمكنك طرح الأسئلة والتعرف إلى المشروع وتجربة استشارة أولية.",
     emailFallback: "إذا لم يفتح الزر تطبيق البريد الإلكتروني، يرجى إرسال رسالتك مباشرة إلى contact@ennealuma.com.",
@@ -214,7 +367,7 @@ const translations = {
     paymentNote: "استخدم رابط PayPal.Me هذا بعد تأكيد الاستشارة المدفوعة عبر البريد الإلكتروني.",
     paypalCta: "ادفع عبر PayPal",
     languagesTitle: "اختيار اللغة",
-    languagesBody: "اختر لغة الواجهة المفضلة لديك. يبقى النص الرسمي الإنجليزي منشورًا حرفيًا.",
+    languagesBody: "اختر لغة الواجهة المفضلة لديك. يتغير نص المشروع حسب اللغة المحددة.",
     contactTitle: "تواصل",
     contactBody: "للتواصل وطلبات الاستشارة، اكتب إلى contact@ennealuma.com.",
     emailLabel: "البريد الإلكتروني",
@@ -239,7 +392,8 @@ const translations = {
     secondaryCta: "联系 EnneaLuma",
     heroNote: "首次完整咨询免费。",
     officialTitle: "项目官方文本",
-    officialIntro: "以下英文内容完全按照项目官方文本发布。",
+    officialIntro: "使用语言选择器以每种支持的语言阅读此项目文本。",
+    officialText: officialTexts.zh,
     consultationTitle: "免费咨询",
     consultationBody: "首次完整咨询免费。你可以提问、了解项目，并体验一次初始咨询。",
     emailFallback: "如果按钮没有打开你的电子邮件应用，请直接发送邮件至 contact@ennealuma.com。",
@@ -251,7 +405,7 @@ const translations = {
     paymentNote: "请在通过电子邮件确认付费咨询后使用此 PayPal.Me 链接。",
     paypalCta: "使用 PayPal 付款",
     languagesTitle: "语言选择器",
-    languagesBody: "请选择你偏好的界面语言。官方英文项目文本仍按原文发布。",
+    languagesBody: "请选择你偏好的界面语言。项目文本会随所选语言切换。",
     contactTitle: "联系",
     contactBody: "如需沟通或申请咨询，请写信至 contact@ennealuma.com。",
     emailLabel: "电子邮件",
@@ -276,7 +430,8 @@ const translations = {
     secondaryCta: "EnneaLuma kontaktéieren",
     heroNote: "Déi éischt voll Consultatioun ass gratis.",
     officialTitle: "Offizielle Projetstext",
-    officialIntro: "Op Englesch genee esou verëffentlecht wéi den offizielle Projetstext.",
+    officialIntro: "Benotzt d'Sproochauswiel, fir dëse Projetstext an all ënnerstëtzte Sprooch ze liesen.",
+    officialText: officialTexts.lb,
     consultationTitle: "Gratis Consultatioun",
     consultationBody: "Déi éischt voll Consultatioun ass gratis. Stellt Froen, léiert de Projet kennen a maacht eng éischt Consultatioun.",
     emailFallback: "Wann de Knäppchen Är E-Mail-App net opmécht, schéckt Äre Message w.e.g. direkt un contact@ennealuma.com.",
@@ -288,7 +443,7 @@ const translations = {
     paymentNote: "Benotzt dëse PayPal.Me-Link nodeems déi bezuelt Consultatioun per E-Mail confirméiert gouf.",
     paypalCta: "Mat PayPal bezuelen",
     languagesTitle: "Sprooch auswielen",
-    languagesBody: "Wielt Är léifst Interface-Sprooch. Den offiziellen englesche Projetstext bleift wuertwiertlech verëffentlecht.",
+    languagesBody: "Wielt Är léifst Interface-Sprooch. De Projetstext wiesselt mat der ausgewielter Sprooch.",
     contactTitle: "Kontakt",
     contactBody: "Fir Kommunikatioun a Consultatiounsufroen, schreift un contact@ennealuma.com.",
     emailLabel: "E-Mail",
@@ -341,6 +496,15 @@ function setLanguage(language) {
     if (dictionary[key]) {
       node.textContent = dictionary[key];
     }
+  });
+
+  document.querySelectorAll(".official-copy").forEach((node) => {
+    node.setAttribute("lang", lang);
+    node.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
+  });
+
+  document.querySelectorAll(".official-panel").forEach((node) => {
+    node.setAttribute("aria-label", dictionary.officialTitle);
   });
 
   document.querySelectorAll("[data-mailto]").forEach((node) => {
