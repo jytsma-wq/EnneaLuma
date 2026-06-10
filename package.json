@@ -1,0 +1,12 @@
+{
+  "name": "ennealuma-landing-page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static EnneaLuma landing page served for Hostinger Node.js GitHub deployment.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
