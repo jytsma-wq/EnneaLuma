@@ -456,9 +456,21 @@ const translations = {
 };
 
 const languageSelect = document.querySelector("#languageSelect");
+const languageSelectFlag = document.querySelector("#languageSelectFlag");
 const languageButtons = document.querySelectorAll("[data-lang-option]");
 const metaDescription = document.querySelector('meta[name="description"]');
 const year = document.querySelector("#year");
+
+const languageFlags = {
+  en: "assets/flags/gb.svg",
+  de: "assets/flags/de.svg",
+  fr: "assets/flags/fr.svg",
+  es: "assets/flags/es.svg",
+  it: "assets/flags/it.svg",
+  ar: "assets/flags/sa.svg",
+  zh: "assets/flags/cn.svg",
+  lb: "assets/flags/lu.svg"
+};
 
 function normalizeLanguage(language) {
   if (!language) return "en";
@@ -521,6 +533,9 @@ function setLanguage(language) {
 
   languageSelect.value = lang;
   languageSelect.setAttribute("aria-label", dictionary.languageLabel);
+  if (languageSelectFlag) {
+    languageSelectFlag.src = languageFlags[lang];
+  }
 
   languageButtons.forEach((button) => {
     const isActive = button.getAttribute("data-lang-option") === lang;
