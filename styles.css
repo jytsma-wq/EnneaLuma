@@ -615,33 +615,91 @@ h3 {
   background-size: 160px 160px, auto;
 }
 
+.official-section .narrow {
+  max-width: 900px;
+}
+
+.official-section .section-heading {
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
+}
+
 .official-panel {
   position: relative;
-  padding: 34px;
+  padding: clamp(30px, 5vw, 54px);
   overflow: hidden;
-  border: 1px solid rgba(62, 40, 95, 0.14);
-  border-radius: var(--radius);
-  background: var(--paper-strong);
-  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(167, 139, 199, 0.34);
+  border-radius: 24px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(255, 253, 247, 0.88)),
+    var(--paper-strong);
+  box-shadow: 0 28px 80px rgba(62, 40, 95, 0.12);
+  backdrop-filter: blur(14px);
 }
 
 .official-panel::before {
   position: absolute;
   inset: 0;
-  border-block-start: 4px solid var(--sage);
+  border-block-start: 5px solid rgba(175, 207, 180, 0.72);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(237, 228, 245, 0.54), transparent 16rem),
+    radial-gradient(circle at 90% 18%, rgba(234, 245, 236, 0.66), transparent 18rem);
+  content: "";
+  pointer-events: none;
+}
+
+.official-panel::after {
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 20px;
   content: "";
   pointer-events: none;
 }
 
 .official-copy {
   position: relative;
+  z-index: 1;
   margin: 0;
-  color: #332f39;
+  color: #2f2a35;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 16px;
-  line-height: 1.78;
+  font-size: 17px;
+  line-height: 1.75;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+}
+
+.official-bullet-line {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-inline-start: 30px;
+}
+
+.official-bullet-line::before {
+  position: absolute;
+  inset-block-start: 0.88em;
+  inset-inline-start: 4px;
+  width: 9px;
+  height: 9px;
+  border: 1px solid rgba(255, 253, 247, 0.96);
+  border-radius: 50%;
+  background: var(--soft-gold);
+  box-shadow:
+    0 0 0 4px rgba(237, 228, 245, 0.86),
+    0 0 16px rgba(216, 183, 106, 0.34);
+  content: "";
+  transform: translateY(-50%);
+}
+
+.official-bullet-marker {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .story-section {

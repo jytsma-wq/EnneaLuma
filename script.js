@@ -636,6 +636,31 @@ function contactMailtoHref(subject) {
   return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}`;
 }
 
+function renderOfficialText(node, text) {
+  const lines = text.split("\n");
+  node.replaceChildren();
+
+  lines.forEach((line, index) => {
+    if (line.startsWith("* ")) {
+      const lineNode = document.createElement("span");
+      lineNode.className = "official-bullet-line";
+
+      const marker = document.createElement("span");
+      marker.className = "official-bullet-marker";
+      marker.textContent = "*";
+
+      lineNode.append(marker, document.createTextNode(line.slice(1)));
+      node.append(lineNode);
+    } else {
+      node.append(document.createTextNode(line));
+    }
+
+    if (index < lines.length - 1) {
+      node.append(document.createTextNode("\n"));
+    }
+  });
+}
+
 function setLanguage(language) {
   const lang = normalizeLanguage(language);
   const dictionary = translations[lang];
@@ -657,6 +682,7 @@ function setLanguage(language) {
   document.querySelectorAll(".official-copy").forEach((node) => {
     node.setAttribute("lang", lang);
     node.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
+    renderOfficialText(node, dictionary.officialText);
   });
 
   document.querySelectorAll(".official-panel").forEach((node) => {
