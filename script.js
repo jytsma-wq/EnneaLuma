@@ -1,5 +1,7 @@
 const EMAIL = "info@ennealuma.com";
-const CONSULTATION_MAILTO = "mailto:info@ennealuma.com?subject=Free%20Consultation%20Request%20-%20EnneaLuma&body=Hello%20EnneaLuma%2C%0A%0AI%20would%20like%20to%20request%20my%20free%20first%20consultation.%0A%0AName%3A%0APreferred%20language%3A%0AMain%20question%3A%0APreferred%20contact%20method%3A%0A%0AThank%20you.";
+const CONSULTATION_SUBJECT = "Free%20Consultation%20Request";
+const CONSULTATION_BODY = "Hello%20EnneaLuma%2C%0A%0AI%20would%20like%20to%20request%20my%20free%20first%20consultation.%0A%0AName%3A%0ALanguage%3A%0AMain%20question%3A%0A%0AThank%20you.";
+const CONSULTATION_MAILTO = `mailto:${EMAIL}?subject=${CONSULTATION_SUBJECT}&body=${CONSULTATION_BODY}`;
 
 const officialTexts = {
   en: `Welcome to the international project dedicated to the psychomatrix, spiritual development, self-discovery, and various esoteric fields.
@@ -632,8 +634,8 @@ function mailtoHref() {
   return CONSULTATION_MAILTO;
 }
 
-function contactMailtoHref(subject) {
-  return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}`;
+function contactMailtoHref() {
+  return CONSULTATION_MAILTO;
 }
 
 function renderOfficialText(node, text) {
