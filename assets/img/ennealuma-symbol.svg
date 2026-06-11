@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="EnneaLuma symbol">
+  <defs>
+    <radialGradient id="symbolGlow" cx="50%" cy="50%" r="52%">
+      <stop offset="0" stop-color="#FFFDF7"/>
+      <stop offset="0.36" stop-color="#EDE4F5"/>
+      <stop offset="0.7" stop-color="#EAF5EC"/>
+      <stop offset="1" stop-color="#FBF8F1"/>
+    </radialGradient>
+    <filter id="softLight" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+  <circle cx="128" cy="128" r="112" fill="url(#symbolGlow)"/>
+  <circle cx="128" cy="128" r="100" fill="none" stroke="#A78BC7" stroke-width="3" opacity="0.72"/>
+  <circle cx="128" cy="128" r="66" fill="none" stroke="#AFCFB4" stroke-width="2" opacity="0.56"/>
+  <g stroke="#A78BC7" stroke-width="2" opacity="0.3">
+    <path d="M80 80h96M80 128h96M80 176h96M80 80v96M128 80v96M176 80v96"/>
+  </g>
+  <circle cx="128" cy="128" r="28" fill="#D8B76A" opacity="0.24" filter="url(#softLight)"/>
+  <g fill="#6F9F78">
+    <circle cx="80" cy="80" r="9"/>
+    <circle cx="128" cy="80" r="9"/>
+    <circle cx="176" cy="80" r="9"/>
+    <circle cx="80" cy="128" r="9"/>
+    <circle cx="176" cy="128" r="9"/>
+    <circle cx="80" cy="176" r="9"/>
+    <circle cx="128" cy="176" r="9"/>
+    <circle cx="176" cy="176" r="9"/>
+  </g>
+  <circle cx="128" cy="128" r="15" fill="#FFFDF7" stroke="#A78BC7" stroke-width="3"/>
+  <circle cx="128" cy="128" r="8" fill="#D8B76A"/>
+</svg>

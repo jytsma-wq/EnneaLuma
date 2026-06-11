@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="EnneaLuma social preview">
+  <defs>
+    <radialGradient id="ogGlowA" cx="22%" cy="18%" r="48%">
+      <stop offset="0" stop-color="#EAF5EC"/>
+      <stop offset="1" stop-color="#FBF8F1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ogGlowB" cx="82%" cy="34%" r="46%">
+      <stop offset="0" stop-color="#EDE4F5"/>
+      <stop offset="1" stop-color="#FBF8F1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#FBF8F1"/>
+  <rect width="1200" height="630" fill="url(#ogGlowA)"/>
+  <rect width="1200" height="630" fill="url(#ogGlowB)"/>
+  <circle cx="875" cy="315" r="178" fill="#FFFDF7" opacity="0.7"/>
+  <circle cx="875" cy="315" r="152" fill="none" stroke="#A78BC7" stroke-width="4"/>
+  <circle cx="875" cy="315" r="96" fill="none" stroke="#AFCFB4" stroke-width="3" opacity="0.7"/>
+  <g stroke="#3E285F" stroke-width="2" opacity="0.18">
+    <path d="M815 255h120M815 315h120M815 375h120M815 255v120M875 255v120M935 255v120"/>
+  </g>
+  <g fill="#6F9F78">
+    <circle cx="815" cy="255" r="11"/>
+    <circle cx="875" cy="255" r="11"/>
+    <circle cx="935" cy="255" r="11"/>
+    <circle cx="815" cy="315" r="11"/>
+    <circle cx="935" cy="315" r="11"/>
+    <circle cx="815" cy="375" r="11"/>
+    <circle cx="875" cy="375" r="11"/>
+    <circle cx="935" cy="375" r="11"/>
+  </g>
+  <circle cx="875" cy="315" r="20" fill="#FFFDF7" stroke="#A78BC7" stroke-width="4"/>
+  <circle cx="875" cy="315" r="10" fill="#D8B76A"/>
+  <text x="96" y="285" fill="#3E285F" font-family="Georgia, 'Times New Roman', serif" font-size="96" font-weight="700">EnneaLuma</text>
+  <text x="102" y="354" fill="#2F2A35" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="600">Psychomatrix, clarity and inner balance</text>
+  <text x="104" y="417" fill="#6D6675" font-family="Segoe UI, Arial, sans-serif" font-size="25">International spiritual exploration and self-reflection</text>
+</svg>

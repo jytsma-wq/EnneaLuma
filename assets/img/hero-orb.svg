@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-label="Soft EnneaLuma matrix orb">
+  <defs>
+    <radialGradient id="orbBg" cx="48%" cy="48%" r="58%">
+      <stop offset="0" stop-color="#FFFDF7"/>
+      <stop offset="0.34" stop-color="#EDE4F5"/>
+      <stop offset="0.62" stop-color="#EAF5EC"/>
+      <stop offset="1" stop-color="#FBF8F1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFFDF7"/>
+      <stop offset="0.42" stop-color="#D8B76A"/>
+      <stop offset="1" stop-color="#A78BC7"/>
+    </radialGradient>
+    <filter id="orbBlur" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <circle cx="360" cy="360" r="330" fill="url(#orbBg)"/>
+  <circle cx="360" cy="360" r="250" fill="#FFFDF7" opacity="0.5"/>
+  <circle cx="360" cy="360" r="235" fill="none" stroke="#A78BC7" stroke-width="4" opacity="0.72"/>
+  <circle cx="360" cy="360" r="156" fill="none" stroke="#AFCFB4" stroke-width="3" opacity="0.54"/>
+  <circle cx="360" cy="360" r="70" fill="#FFFDF7" opacity="0.82"/>
+  <circle cx="360" cy="360" r="52" fill="#D8B76A" opacity="0.22" filter="url(#orbBlur)"/>
+  <g stroke="#3E285F" stroke-width="2.6" opacity="0.17">
+    <path d="M270 270h180M270 360h180M270 450h180M270 270v180M360 270v180M450 270v180"/>
+  </g>
+  <g fill="#6F9F78">
+    <circle cx="270" cy="270" r="18"/>
+    <circle cx="360" cy="270" r="18"/>
+    <circle cx="450" cy="270" r="18"/>
+    <circle cx="270" cy="360" r="18"/>
+    <circle cx="450" cy="360" r="18"/>
+    <circle cx="270" cy="450" r="18"/>
+    <circle cx="360" cy="450" r="18"/>
+    <circle cx="450" cy="450" r="18"/>
+  </g>
+  <circle cx="360" cy="360" r="29" fill="url(#orbCenter)" stroke="#3E285F" stroke-width="3" opacity="0.92"/>
+  <path d="M178 360c36-74 96-121 182-121s146 47 182 121c-36 74-96 121-182 121S214 434 178 360Z" fill="none" stroke="#D8B76A" stroke-width="2" opacity="0.34"/>
+</svg>
