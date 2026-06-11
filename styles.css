@@ -789,64 +789,57 @@ h3 {
 
 .visual-card-image::after {
   position: absolute;
-  inset: 0;
+  inset-block-start: 16px;
+  inset-inline-end: 16px;
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(62, 40, 95, 0.12);
+  border-radius: 50%;
   background:
-    radial-gradient(circle at 84% 20%, rgba(216, 183, 106, 0.22), transparent 4.5rem),
+    radial-gradient(circle at center, rgba(216, 183, 106, 0.16), rgba(255, 253, 247, 0.82) 44%, rgba(255, 253, 247, 0.58) 100%),
     url("assets/img/ennealuma-symbol.svg?v=20260611-12");
-  background-position: center, right 18px bottom 16px;
+  background-position: center, center;
   background-repeat: no-repeat;
-  background-size: auto, 58px 58px;
+  background-size: auto, 76%;
+  box-shadow: 0 14px 30px rgba(62, 40, 95, 0.10), 0 0 24px rgba(175, 207, 180, 0.22);
   content: "";
-  opacity: 0.62;
+  opacity: 0.72;
   pointer-events: none;
 }
 
 .story-card-clarity .visual-card-image {
   background:
     url("assets/img/matrix-pattern.svg?v=20260611-12"),
-    radial-gradient(circle at 18% 22%, rgba(255, 253, 247, 0.92), transparent 7rem),
-    radial-gradient(circle at 72% 48%, rgba(175, 207, 180, 0.46), transparent 9rem),
-    linear-gradient(135deg, rgba(237, 228, 245, 0.70), rgba(234, 245, 236, 0.74));
+    radial-gradient(circle at 18% 22%, rgba(255, 253, 247, 0.96), transparent 7rem),
+    radial-gradient(circle at 78% 52%, rgba(175, 207, 180, 0.36), transparent 9rem),
+    linear-gradient(135deg, rgba(255, 253, 247, 0.96), rgba(234, 245, 236, 0.86));
   background-size: 150px 150px, auto, auto, auto;
 }
 
 .story-card-development .visual-card-image {
   background:
     url("assets/img/matrix-pattern.svg?v=20260611-12"),
-    radial-gradient(circle at 34% 30%, rgba(216, 183, 106, 0.22), transparent 6rem),
-    radial-gradient(circle at 76% 28%, rgba(167, 139, 199, 0.50), transparent 9rem),
-    linear-gradient(135deg, rgba(255, 253, 247, 0.82), rgba(237, 228, 245, 0.76));
+    radial-gradient(circle at 26% 28%, rgba(234, 245, 236, 0.94), transparent 7rem),
+    radial-gradient(circle at 76% 30%, rgba(167, 139, 199, 0.36), transparent 9rem),
+    linear-gradient(135deg, rgba(234, 245, 236, 0.88), rgba(237, 228, 245, 0.84));
   background-size: 150px 150px, auto, auto, auto;
 }
 
 .story-card-balance .visual-card-image {
   background:
     url("assets/img/matrix-pattern.svg?v=20260611-12"),
-    radial-gradient(circle at 28% 32%, rgba(234, 245, 236, 0.92), transparent 7rem),
-    radial-gradient(circle at 78% 56%, rgba(216, 183, 106, 0.24), transparent 7rem),
-    linear-gradient(135deg, rgba(234, 245, 236, 0.82), rgba(237, 228, 245, 0.62));
+    radial-gradient(circle at 26% 30%, rgba(237, 228, 245, 0.92), transparent 7rem),
+    radial-gradient(circle at 78% 56%, rgba(175, 207, 180, 0.34), transparent 8rem),
+    linear-gradient(135deg, rgba(237, 228, 245, 0.86), rgba(234, 245, 236, 0.86));
   background-size: 150px 150px, auto, auto, auto;
 }
 
 .visual-card-content {
   position: relative;
-  min-height: 108px;
+  min-height: 92px;
   display: grid;
   align-content: end;
-  gap: 16px;
   padding: 22px 24px 24px;
-}
-
-.story-symbol {
-  width: 48px;
-  height: 48px;
-  border: 1px solid rgba(62, 40, 95, 0.18);
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.62);
-  background-image: url("assets/img/ennealuma-symbol.svg?v=20260611-12");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 74%;
 }
 
 .story-card h3 {
