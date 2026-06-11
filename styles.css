@@ -85,6 +85,9 @@ select {
   font: inherit;
 }
 
+a:focus,
+button:focus,
+select:focus,
 :focus-visible {
   outline: 3px solid rgba(62, 40, 95, 0.34);
   outline-offset: 4px;
