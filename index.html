@@ -18,8 +18,8 @@
   <meta name="twitter:image" content="https://ennealuma.com/assets/img/og-image.svg">
   <meta name="theme-color" content="#FBF8F1">
   <link rel="icon" href="assets/img/ennealuma-symbol.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/img/hero-orb.svg" as="image" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260611-3">
+  <link rel="preload" href="assets/img/hero-light-path.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="styles.css?v=20260611-4">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -84,7 +84,13 @@
         </div>
 
         <div class="hero-visual">
-          <img class="hero-orb" src="assets/img/hero-orb.svg" alt="A soft EnneaLuma nine-point matrix symbol with a central light" width="720" height="720">
+          <figure class="hero-image-panel">
+            <img class="hero-photo" src="assets/img/hero-light-path.webp" alt="Soft sunlight over a quiet path, symbolizing inner clarity and spiritual exploration." width="980" height="760" fetchpriority="high" decoding="async">
+            <span class="image-glow" aria-hidden="true"></span>
+            <span class="symbol-overlay" aria-hidden="true">
+              <img src="assets/img/ennealuma-symbol.svg" alt="" width="132" height="132">
+            </span>
+          </figure>
         </div>
       </div>
     </section>
@@ -118,24 +124,39 @@ This project is being created with great responsibility, care for people, and a 
       </div>
     </section>
 
-    <section class="section story-section" aria-labelledby="story-title">
+    <section class="section story-section visual-story" aria-labelledby="story-title">
       <div class="container">
         <div class="story-intro">
-          <h2 id="story-title" data-i18n="storyTitle">A calm visual path for reflection</h2>
-          <p class="section-lede" data-i18n="storyBody">Soft symbolic spaces for inner clarity, spiritual development and energy balance.</p>
+          <h2 id="story-title" data-i18n="storyTitle">A calm space for spiritual exploration</h2>
+          <p class="section-lede" data-i18n="storyBody">Gentle visual moments for inner clarity, spiritual development and energy balance.</p>
         </div>
         <div class="story-grid">
-          <article class="story-card story-card-clarity">
-            <span class="story-symbol" aria-hidden="true"></span>
-            <h3 data-i18n="storyClarity">Inner clarity</h3>
+          <article class="story-card visual-card story-card-clarity">
+            <div class="visual-card-image">
+              <img src="assets/img/inner-clarity.webp" alt="Morning light over a calm natural landscape, representing inner clarity." width="640" height="420" loading="lazy" decoding="async">
+            </div>
+            <div class="visual-card-content">
+              <span class="story-symbol" aria-hidden="true"></span>
+              <h3 data-i18n="storyClarity">Inner clarity</h3>
+            </div>
           </article>
-          <article class="story-card story-card-development">
-            <span class="story-symbol" aria-hidden="true"></span>
-            <h3 data-i18n="storyDevelopment">Spiritual development</h3>
+          <article class="story-card visual-card story-card-development">
+            <div class="visual-card-image">
+              <img src="assets/img/spiritual-development.webp" alt="Soft luminous sky and light, representing spiritual development." width="640" height="420" loading="lazy" decoding="async">
+            </div>
+            <div class="visual-card-content">
+              <span class="story-symbol" aria-hidden="true"></span>
+              <h3 data-i18n="storyDevelopment">Spiritual development</h3>
+            </div>
           </article>
-          <article class="story-card story-card-balance">
-            <span class="story-symbol" aria-hidden="true"></span>
-            <h3 data-i18n="storyBalance">Energy balance</h3>
+          <article class="story-card visual-card story-card-balance">
+            <div class="visual-card-image">
+              <img src="assets/img/energy-balance.webp" alt="Calm water and natural elements, representing balance and harmony." width="640" height="420" loading="lazy" decoding="async">
+            </div>
+            <div class="visual-card-content">
+              <span class="story-symbol" aria-hidden="true"></span>
+              <h3 data-i18n="storyBalance">Energy balance</h3>
+            </div>
           </article>
         </div>
       </div>
@@ -241,6 +262,6 @@ This project is being created with great responsibility, care for people, and a 
     </button>
   </div>
 
-  <script src="script.js?v=20260611-3" defer></script>
+  <script src="script.js?v=20260611-4" defer></script>
 </body>
 </html>
