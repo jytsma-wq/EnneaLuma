@@ -444,6 +444,14 @@ h3 {
 .hero-lede {
   max-width: 620px;
   margin-block-end: 30px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: var(--radius);
+  background: rgba(255, 253, 247, 0.76);
+  box-shadow: 0 14px 34px rgba(47, 42, 53, 0.12);
+  color: #342c43;
+  font-weight: 650;
+  backdrop-filter: blur(6px);
 }
 
 .hero-actions,
