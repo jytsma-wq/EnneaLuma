@@ -9,7 +9,10 @@
   --pale-mint: #EAF5EC;
   --soft-gold: #D8B76A;
   --charcoal: #2F2A35;
-  --muted: #6D6675;
+  --muted: #5D5666;
+  --muted-strong: #514A5B;
+  --purple-ink: #4C3965;
+  --sage-ink: #3F6848;
   --white-glass: rgba(255, 255, 255, 0.72);
   --paper: rgba(255, 253, 247, 0.86);
   --paper-strong: rgba(255, 255, 255, 0.92);
@@ -203,7 +206,7 @@ select:focus,
   align-items: center;
   justify-content: center;
   gap: 18px;
-  color: #57505f;
+  color: var(--muted-strong);
   font-size: 14px;
   font-weight: 700;
 }
@@ -459,7 +462,7 @@ h3 {
 
 .hero-tagline {
   margin-block-end: 22px;
-  color: #55436e;
+  color: var(--purple-ink);
   font-size: 24px;
   font-weight: 750;
   line-height: 1.35;
@@ -475,7 +478,7 @@ h3 {
 .hero-lede {
   max-width: 590px;
   margin-block-end: 30px;
-  color: #5b5366;
+  color: var(--muted-strong);
   font-weight: 500;
 }
 
@@ -489,7 +492,7 @@ h3 {
 
 .hero-note {
   margin-block: 18px 0;
-  color: #516f58;
+  color: var(--sage-ink);
   font-weight: 800;
 }
 
@@ -522,7 +525,7 @@ h3 {
   border: 1px solid rgba(62, 40, 95, 0.12);
   border-radius: 999px;
   background: rgba(237, 228, 245, 0.74);
-  color: #4f4958;
+  color: var(--muted-strong);
   font-size: 13px;
   font-weight: 750;
   box-shadow: 0 10px 24px rgba(62, 40, 95, 0.04);
@@ -705,7 +708,7 @@ h3 {
   position: relative;
   z-index: 1;
   margin: 0;
-  color: #2f2a35;
+  color: var(--charcoal);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 17px;
   line-height: 1.75;
@@ -974,7 +977,7 @@ h3 {
   border: 1px solid rgba(62, 40, 95, 0.14);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.70);
-  color: #4b4356;
+  color: var(--muted-strong);
   font-weight: 800;
   cursor: pointer;
   box-shadow: 0 10px 22px rgba(62, 40, 95, 0.04);
@@ -1079,7 +1082,7 @@ h3 {
 
 .disclaimer p {
   margin-block-end: 0;
-  color: #514a5b;
+  color: var(--muted-strong);
   line-height: 1.72;
 }
 
