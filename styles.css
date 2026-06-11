@@ -50,10 +50,10 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background-image: url("assets/img/matrix-pattern.svg");
-  background-size: 188px 188px;
+  background-image: url("assets/img/matrix-pattern.svg?v=20260611-12");
+  background-size: 160px 160px;
   content: "";
-  opacity: 0.25;
+  opacity: 0.28;
   pointer-events: none;
 }
 
@@ -385,10 +385,27 @@ h3 {
   align-items: center;
   overflow: hidden;
   isolation: isolate;
-  background:
+  background-color: rgba(255, 253, 247, 0.98);
+  background-image:
+    url("assets/img/matrix-pattern.svg?v=20260611-12"),
     radial-gradient(circle at 78% 48%, rgba(237, 228, 245, 0.86), transparent 24rem),
     radial-gradient(circle at 88% 18%, rgba(175, 207, 180, 0.34), transparent 18rem),
     linear-gradient(135deg, rgba(255, 253, 247, 0.98) 0%, rgba(251, 248, 241, 0.96) 54%, rgba(234, 245, 236, 0.70) 100%);
+  background-position:
+    right 9% top 18%,
+    center,
+    center,
+    center;
+  background-repeat:
+    repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-size:
+    160px 160px,
+    auto,
+    auto,
+    auto;
   padding-block: clamp(72px, 10vh, 112px) clamp(70px, 9vh, 104px);
 }
 
@@ -573,9 +590,12 @@ h3 {
 
 .official-section {
   border-block: 1px solid rgba(62, 40, 95, 0.09);
-  background:
-    linear-gradient(180deg, rgba(237, 228, 245, 0.34), rgba(234, 245, 236, 0.42)),
-    rgba(255, 253, 247, 0.56);
+  background-color: rgba(255, 253, 247, 0.56);
+  background-image:
+    url("assets/img/matrix-pattern.svg?v=20260611-12"),
+    linear-gradient(180deg, rgba(237, 228, 245, 0.34), rgba(234, 245, 236, 0.42));
+  background-repeat: repeat, no-repeat;
+  background-size: 160px 160px, auto;
 }
 
 .official-panel {
@@ -608,7 +628,9 @@ h3 {
 }
 
 .story-section {
-  background: rgba(255, 253, 247, 0.66);
+  background-color: rgba(255, 253, 247, 0.66);
+  background-image: url("assets/img/matrix-pattern.svg?v=20260611-12");
+  background-size: 160px 160px;
 }
 
 .story-grid {
@@ -685,13 +707,11 @@ h3 {
   height: 48px;
   border: 1px solid rgba(62, 40, 95, 0.18);
   border-radius: 50%;
-  background:
-    radial-gradient(circle at center, var(--soft-gold) 0 3px, transparent 4px),
-    radial-gradient(circle at 35% 35%, var(--sage) 0 2px, transparent 3px),
-    radial-gradient(circle at 65% 35%, var(--soft-purple) 0 2px, transparent 3px),
-    radial-gradient(circle at 35% 65%, var(--soft-purple) 0 2px, transparent 3px),
-    radial-gradient(circle at 65% 65%, var(--sage) 0 2px, transparent 3px),
-    rgba(255, 255, 255, 0.52);
+  background-color: rgba(255, 255, 255, 0.62);
+  background-image: url("assets/img/ennealuma-symbol.svg?v=20260611-12");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 74%;
 }
 
 .story-card h3 {
@@ -702,8 +722,12 @@ h3 {
 
 .action-section {
   border-block: 1px solid rgba(62, 40, 95, 0.08);
-  background:
+  background-color: rgba(255, 253, 247, 0.54);
+  background-image:
+    url("assets/img/matrix-pattern.svg?v=20260611-12"),
     linear-gradient(180deg, rgba(255, 253, 247, 0.54), rgba(234, 245, 236, 0.50));
+  background-repeat: repeat, no-repeat;
+  background-size: 160px 160px, auto;
 }
 
 .action-heading {
@@ -782,7 +806,9 @@ h3 {
 }
 
 .language-section {
-  background: rgba(255, 253, 247, 0.72);
+  background-color: rgba(255, 253, 247, 0.72);
+  background-image: url("assets/img/matrix-pattern.svg?v=20260611-12");
+  background-size: 160px 160px;
 }
 
 .language-layout,
@@ -841,8 +867,12 @@ h3 {
 
 .contact-section {
   border-block-start: 1px solid rgba(62, 40, 95, 0.08);
-  background:
+  background-color: rgba(255, 253, 247, 0.72);
+  background-image:
+    url("assets/img/matrix-pattern.svg?v=20260611-12"),
     linear-gradient(180deg, rgba(237, 228, 245, 0.32), rgba(255, 253, 247, 0.72));
+  background-repeat: repeat, no-repeat;
+  background-size: 160px 160px, auto;
 }
 
 .contact-layout {

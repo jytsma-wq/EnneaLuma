@@ -1,14 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="168" height="168" viewBox="0 0 168 168" fill="none">
-  <rect width="168" height="168" fill="none"/>
-  <g opacity="0.18">
-    <circle cx="50" cy="50" r="3" fill="#A78BC7"/>
-    <circle cx="84" cy="50" r="3" fill="#AFCFB4"/>
-    <circle cx="118" cy="50" r="3" fill="#A78BC7"/>
-    <circle cx="50" cy="84" r="3" fill="#AFCFB4"/>
-    <circle cx="84" cy="84" r="4" fill="#D8B76A"/>
-    <circle cx="118" cy="84" r="3" fill="#AFCFB4"/>
-    <circle cx="50" cy="118" r="3" fill="#A78BC7"/>
-    <circle cx="84" cy="118" r="3" fill="#AFCFB4"/>
-    <circle cx="118" cy="118" r="3" fill="#A78BC7"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none">
+  <circle cx="52" cy="52" r="3" fill="#A78BC7" fill-opacity="0.13"/>
+  <circle cx="80" cy="52" r="3" fill="#A78BC7" fill-opacity="0.13"/>
+  <circle cx="108" cy="52" r="3" fill="#A78BC7" fill-opacity="0.13"/>
+  <circle cx="52" cy="80" r="3" fill="#A78BC7" fill-opacity="0.13"/>
+  <circle cx="80" cy="80" r="4" fill="#D8B76A" fill-opacity="0.15"/>
+  <circle cx="108" cy="80" r="3" fill="#A78BC7" fill-opacity="0.13"/>
+  <circle cx="52" cy="108" r="3" fill="#A78BC7" fill-opacity="0.13"/>
+  <circle cx="80" cy="108" r="3" fill="#A78BC7" fill-opacity="0.13"/>
+  <circle cx="108" cy="108" r="3" fill="#A78BC7" fill-opacity="0.13"/>
+  <circle cx="80" cy="80" r="36" fill="none" stroke="#AFCFB4" stroke-width="1" stroke-opacity="0.10"/>
 </svg>
