@@ -606,6 +606,7 @@ const languageSelectCode = document.querySelector("#languageSelectCode");
 const languageButtons = document.querySelectorAll("[data-lang-option]");
 const metaDescription = document.querySelector('meta[name="description"]');
 const year = document.querySelector("#year");
+const reducedMotionQuery = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : null;
 
 const languageCodes = {
   en: "EN",
@@ -636,6 +637,10 @@ function mailtoHref() {
 
 function contactMailtoHref() {
   return CONSULTATION_MAILTO;
+}
+
+function updateMotionPreference() {
+  document.documentElement.dataset.motion = reducedMotionQuery && reducedMotionQuery.matches ? "reduce" : "no-preference";
 }
 
 function renderOfficialText(node, text) {
@@ -722,6 +727,15 @@ function setLanguage(language) {
 
 if (year) {
   year.textContent = String(new Date().getFullYear());
+}
+
+updateMotionPreference();
+if (reducedMotionQuery) {
+  if (reducedMotionQuery.addEventListener) {
+    reducedMotionQuery.addEventListener("change", updateMotionPreference);
+  } else if (reducedMotionQuery.addListener) {
+    reducedMotionQuery.addListener(updateMotionPreference);
+  }
 }
 
 languageSelect.addEventListener("change", (event) => {
