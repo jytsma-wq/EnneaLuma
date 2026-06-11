@@ -45,4 +45,32 @@ Original URL: https://www.pexels.com/photo/balancing-stones-in-river-15979975/
 License note: Pexels License. Free to use; attribution is not required; no endorsement implied.
 Deleted: Removed from `assets/img/`; replaced by the Energy balance Visual Story card CSS background.
 
+## Deleted flag icons
+
+Flag icons were removed on June 11, 2026 because flags identify countries or regions, not languages, and can misrepresent languages that are used across borders. The language selector now uses text labels: EN, DE, FR, ES, IT, AR, 中文, and LB.
+
+### assets/flags/gb.svg
+Deleted: Removed from the repository; replaced by the EN text label.
+
+### assets/flags/de.svg
+Deleted: Removed from the repository; replaced by the DE text label.
+
+### assets/flags/fr.svg
+Deleted: Removed from the repository; replaced by the FR text label.
+
+### assets/flags/es.svg
+Deleted: Removed from the repository; replaced by the ES text label.
+
+### assets/flags/it.svg
+Deleted: Removed from the repository; replaced by the IT text label.
+
+### assets/flags/sa.svg
+Deleted: Removed from the repository; replaced by the AR text label.
+
+### assets/flags/cn.svg
+Deleted: Removed from the repository; replaced by the 中文 text label.
+
+### assets/flags/lu.svg
+Deleted: Removed from the repository; replaced by the LB text label.
+
 Pexels license reference: https://www.pexels.com/license/

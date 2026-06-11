@@ -253,14 +253,21 @@ select:focus,
   max-width: 100%;
 }
 
-.language-select-flag {
+.language-select-code {
   position: absolute;
   inset-inline-start: 12px;
-  width: 24px;
-  height: 16px;
-  border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(47, 42, 53, 0.14);
-  object-fit: cover;
+  width: 34px;
+  min-height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(62, 40, 95, 0.14);
+  border-radius: 999px;
+  background: rgba(237, 228, 245, 0.78);
+  color: var(--deep-purple);
+  font-size: 12px;
+  font-weight: 850;
+  line-height: 1;
   pointer-events: none;
 }
 
@@ -271,13 +278,13 @@ select:focus,
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.82);
   color: var(--charcoal);
-  padding: 0 34px 0 46px;
+  padding: 0 34px 0 56px;
   font-size: 14px;
   font-weight: 650;
 }
 
 html[dir="rtl"] .language-select {
-  padding: 0 46px 0 34px;
+  padding: 0 56px 0 34px;
 }
 
 .button {
@@ -974,6 +981,18 @@ h3 {
   transition: transform 180ms ease, background 180ms ease, border-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
 }
 
+.language-option span {
+  min-width: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(237, 228, 245, 0.42);
+  color: inherit;
+  line-height: 1.1;
+}
+
 .language-option:hover {
   transform: translateY(-2px);
   border-color: rgba(62, 40, 95, 0.26);
@@ -987,13 +1006,8 @@ h3 {
   box-shadow: 0 14px 30px rgba(62, 40, 95, 0.16);
 }
 
-.language-flag {
-  width: 24px;
-  height: 16px;
-  flex: 0 0 24px;
-  border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(47, 42, 53, 0.14);
-  object-fit: cover;
+.language-option.is-active span {
+  background: rgba(255, 255, 255, 0.16);
 }
 
 .contact-section {
