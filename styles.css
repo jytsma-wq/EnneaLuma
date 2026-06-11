@@ -523,6 +523,7 @@ h3 {
 
 .hero-visual {
   position: relative;
+  width: 100%;
   min-width: 0;
   display: grid;
   place-items: center;
@@ -542,24 +543,33 @@ h3 {
 .hero-image-panel {
   position: relative;
   width: min(100%, 540px);
-  aspect-ratio: 1.06;
+  aspect-ratio: 1;
   margin: 0;
   display: grid;
   place-items: center;
-  overflow: visible;
+  overflow: hidden;
   border: 1px solid rgba(62, 40, 95, 0.10);
-  border-radius: var(--radius);
-  background: rgba(255, 253, 247, 0.78);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center, rgba(255, 253, 247, 0.94) 0 16%, rgba(216, 183, 106, 0.18) 17%, rgba(237, 228, 245, 0.50) 38%, rgba(234, 245, 236, 0.70) 66%, rgba(255, 253, 247, 0.84) 100%),
+    linear-gradient(145deg, rgba(255, 253, 247, 0.78), rgba(237, 228, 245, 0.46));
   box-shadow: 0 30px 70px rgba(62, 40, 95, 0.12);
   backdrop-filter: blur(10px);
 }
 
-.hero-abstract {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.hero-symbol-panel::before,
+.hero-symbol-panel::after {
+  position: absolute;
+  inset: 11%;
+  border: 1px solid rgba(167, 139, 199, 0.22);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.hero-symbol-panel::after {
+  inset: 25%;
+  border-color: rgba(175, 207, 180, 0.32);
 }
 
 .image-glow {
@@ -591,6 +601,23 @@ h3 {
 .symbol-overlay img {
   width: 72%;
   height: 72%;
+}
+
+.hero-symbol-focus {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  width: clamp(150px, 18vw, 214px);
+  height: clamp(150px, 18vw, 214px);
+  background: rgba(255, 253, 247, 0.84);
+  box-shadow:
+    0 22px 54px rgba(62, 40, 95, 0.16),
+    0 0 64px rgba(175, 207, 180, 0.34);
+}
+
+.hero-symbol-focus img {
+  width: 76%;
+  height: 76%;
 }
 
 .section-heading,
@@ -747,25 +774,52 @@ h3 {
   position: relative;
   aspect-ratio: 32 / 21;
   overflow: hidden;
+  background:
+    url("assets/img/matrix-pattern.svg?v=20260611-12"),
+    radial-gradient(circle at 22% 24%, rgba(255, 253, 247, 0.90), transparent 7rem),
+    linear-gradient(135deg, rgba(237, 228, 245, 0.70), rgba(234, 245, 236, 0.72));
+  background-size: 150px 150px, auto, auto;
 }
 
 .visual-card-image::after {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(255, 253, 247, 0.02), rgba(47, 42, 53, 0.12));
+  background:
+    radial-gradient(circle at 84% 20%, rgba(216, 183, 106, 0.22), transparent 4.5rem),
+    url("assets/img/ennealuma-symbol.svg?v=20260611-12");
+  background-position: center, right 18px bottom 16px;
+  background-repeat: no-repeat;
+  background-size: auto, 58px 58px;
   content: "";
+  opacity: 0.62;
   pointer-events: none;
 }
 
-.visual-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 260ms ease;
+.story-card-clarity .visual-card-image {
+  background:
+    url("assets/img/matrix-pattern.svg?v=20260611-12"),
+    radial-gradient(circle at 18% 22%, rgba(255, 253, 247, 0.92), transparent 7rem),
+    radial-gradient(circle at 72% 48%, rgba(175, 207, 180, 0.46), transparent 9rem),
+    linear-gradient(135deg, rgba(237, 228, 245, 0.70), rgba(234, 245, 236, 0.74));
+  background-size: 150px 150px, auto, auto, auto;
 }
 
-.story-card:hover .visual-card-image img {
-  transform: scale(1.025);
+.story-card-development .visual-card-image {
+  background:
+    url("assets/img/matrix-pattern.svg?v=20260611-12"),
+    radial-gradient(circle at 34% 30%, rgba(216, 183, 106, 0.22), transparent 6rem),
+    radial-gradient(circle at 76% 28%, rgba(167, 139, 199, 0.50), transparent 9rem),
+    linear-gradient(135deg, rgba(255, 253, 247, 0.82), rgba(237, 228, 245, 0.76));
+  background-size: 150px 150px, auto, auto, auto;
+}
+
+.story-card-balance .visual-card-image {
+  background:
+    url("assets/img/matrix-pattern.svg?v=20260611-12"),
+    radial-gradient(circle at 28% 32%, rgba(234, 245, 236, 0.92), transparent 7rem),
+    radial-gradient(circle at 78% 56%, rgba(216, 183, 106, 0.24), transparent 7rem),
+    linear-gradient(135deg, rgba(234, 245, 236, 0.82), rgba(237, 228, 245, 0.62));
+  background-size: 150px 150px, auto, auto, auto;
 }
 
 .visual-card-content {
@@ -1433,6 +1487,22 @@ h3 {
   .symbol-overlay img {
     width: 66px;
     height: 66px;
+  }
+
+  .hero-symbol-panel {
+    width: min(100%, 340px);
+  }
+
+  .hero-symbol-focus {
+    right: auto;
+    bottom: auto;
+    width: 142px;
+    height: 142px;
+  }
+
+  .hero-symbol-focus img {
+    width: 106px;
+    height: 106px;
   }
 
   .official-panel,
