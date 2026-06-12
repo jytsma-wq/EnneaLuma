@@ -45,32 +45,32 @@ Original URL: https://www.pexels.com/photo/balancing-stones-in-river-15979975/
 License note: Pexels License. Free to use; attribution is not required; no endorsement implied.
 Deleted: Removed from `assets/img/`; replaced by the Energy balance Visual Story card CSS background.
 
-## Deleted flag icons
+## Current local flag icons
 
-Flag icons were removed on June 11, 2026 because flags identify countries or regions, not languages, and can misrepresent languages that are used across borders. The language selector now uses text labels: EN, DE, FR, ES, IT, AR, 中文, and LB.
+Flag icons were restored on June 12, 2026 at the site owner's request. The language selector keeps text labels alongside the flags so the language remains explicit. These are simple local SVG drawings created for this project; no external icon library or stock license is required.
 
 ### assets/flags/gb.svg
-Deleted: Removed from the repository; replaced by the EN text label.
+License note: Local SVG flag drawing for the EN language control.
 
 ### assets/flags/de.svg
-Deleted: Removed from the repository; replaced by the DE text label.
+License note: Local SVG flag drawing for the DE language control.
 
 ### assets/flags/fr.svg
-Deleted: Removed from the repository; replaced by the FR text label.
+License note: Local SVG flag drawing for the FR language control.
 
 ### assets/flags/es.svg
-Deleted: Removed from the repository; replaced by the ES text label.
+License note: Local SVG flag drawing for the ES language control.
 
 ### assets/flags/it.svg
-Deleted: Removed from the repository; replaced by the IT text label.
+License note: Local SVG flag drawing for the IT language control.
 
 ### assets/flags/sa.svg
-Deleted: Removed from the repository; replaced by the AR text label.
+License note: Local SVG flag drawing for the AR language control.
 
 ### assets/flags/cn.svg
-Deleted: Removed from the repository; replaced by the 中文 text label.
+License note: Local SVG flag drawing for the 中文 language control.
 
 ### assets/flags/lu.svg
-Deleted: Removed from the repository; replaced by the LB text label.
+License note: Local SVG flag drawing for the LB language control.
 
 Pexels license reference: https://www.pexels.com/license/

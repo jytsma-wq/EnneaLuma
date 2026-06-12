@@ -257,11 +257,13 @@ select:focus,
 .language-select-code {
   position: absolute;
   inset-inline-start: 12px;
-  width: 34px;
+  min-width: 68px;
   min-height: 24px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 6px;
+  padding: 2px 8px;
   border: 1px solid rgba(62, 40, 95, 0.14);
   border-radius: 999px;
   background: rgba(237, 228, 245, 0.78);
@@ -272,6 +274,22 @@ select:focus,
   pointer-events: none;
 }
 
+.language-select-flag,
+.language-flag {
+  flex: 0 0 auto;
+  overflow: hidden;
+  border: 1px solid rgba(62, 40, 95, 0.16);
+  border-radius: 3px;
+  background: #ffffff;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(62, 40, 95, 0.08);
+}
+
+.language-select-flag {
+  width: 24px;
+  height: 16px;
+}
+
 .language-select {
   min-height: 42px;
   max-width: 100%;
@@ -279,13 +297,13 @@ select:focus,
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.82);
   color: var(--charcoal);
-  padding: 0 34px 0 56px;
+  padding: 0 34px 0 92px;
   font-size: 14px;
   font-weight: 650;
 }
 
 html[dir="rtl"] .language-select {
-  padding: 0 56px 0 34px;
+  padding: 0 92px 0 34px;
 }
 
 .button {
@@ -984,6 +1002,16 @@ h3 {
   background: rgba(237, 228, 245, 0.42);
   color: inherit;
   line-height: 1.1;
+}
+
+.language-flag {
+  width: 30px;
+  height: 20px;
+}
+
+.language-option.is-active .language-flag {
+  border-color: rgba(255, 255, 255, 0.42);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
 }
 
 .language-option:hover {
