@@ -2,6 +2,47 @@ const EMAIL = "info@ennealuma.com";
 const CONSULTATION_SUBJECT = "Free%20Consultation%20Request";
 const CONSULTATION_BODY = "Hello%20EnneaLuma%2C%0A%0AI%20would%20like%20to%20request%20my%20free%20first%20consultation.%0A%0AName%3A%0ALanguage%3A%0AMain%20question%3A%0A%0AThank%20you.";
 const CONSULTATION_MAILTO = `mailto:${EMAIL}?subject=${CONSULTATION_SUBJECT}&body=${CONSULTATION_BODY}`;
+const SITE_URL = "https://ennealuma.com/";
+const PAYPAL_URL = "https://www.paypal.me/JasperIJtsma";
+
+const languageUrls = {
+  en: SITE_URL,
+  de: `${SITE_URL}?lang=de`,
+  fr: `${SITE_URL}?lang=fr`,
+  es: `${SITE_URL}?lang=es`,
+  it: `${SITE_URL}?lang=it`,
+  ar: `${SITE_URL}?lang=ar`,
+  zh: `${SITE_URL}?lang=zh`,
+  nl: `${SITE_URL}?lang=nl`,
+  pl: `${SITE_URL}?lang=pl`,
+  lb: `${SITE_URL}?lang=lb`
+};
+
+const languageLocales = {
+  en: "en_US",
+  de: "de_DE",
+  fr: "fr_FR",
+  es: "es_ES",
+  it: "it_IT",
+  ar: "ar_AR",
+  zh: "zh_CN",
+  nl: "nl_NL",
+  pl: "pl_PL",
+  lb: "lb_LU"
+};
+
+const languageNames = [
+  "English",
+  "German",
+  "French",
+  "Spanish",
+  "Italian",
+  "Arabic",
+  "Chinese",
+  "Dutch",
+  "Polish",
+  "Luxembourgish"
+];
 
 const officialTexts = {
   en: `Welcome to the international project dedicated to the psychomatrix, spiritual development, self-discovery, and various esoteric fields.
@@ -189,13 +230,14 @@ Dëse Projet gëtt mat grousser Verantwortung, Suerg ëm d’Leit an engem opric
 const translations = {
   en: {
     documentTitle: "EnneaLuma | Psychomatrix, clarity and inner balance",
-    metaDescription: "EnneaLuma is an international psychomatrix and spiritual exploration project focused on clarity, self-discovery, and inner balance.",
+    metaDescription: "EnneaLuma is an international psychomatrix and spiritual exploration project for self-discovery, energy practices, inner harmony and a free first consultation.",
     tagline: "Psychomatrix, clarity and inner balance",
     navHome: "Home",
     navLanguages: "Languages",
     navOfficial: "Official text",
     navConsultation: "Free consultation",
     navPayment: "Payment",
+    navFaq: "FAQ",
     navContact: "Contact",
     languageLabel: "Language",
     heroEyebrow: "International spiritual project",
@@ -216,6 +258,20 @@ const translations = {
     storyClarity: "Inner clarity",
     storyDevelopment: "Spiritual development",
     storyBalance: "Energy balance",
+    storyClarityBody: "A soft matrix image for reflection, focus and personal insight.",
+    storyDevelopmentBody: "A calm visual path for growth, self-discovery and conscious choices.",
+    storyBalanceBody: "Gentle green and purple forms for harmony, protection and balance.",
+    imageClarityAlt: "Psychomatrix matrix with soft central light for inner clarity",
+    imageDevelopmentAlt: "Light path symbolizing spiritual development and self-discovery",
+    imageBalanceAlt: "Green and purple harmony symbol for energy balance",
+    focusTitle: "Psychomatrix, energy practices and inner balance",
+    focusBody: "EnneaLuma brings the project themes together in a clear, multilingual space for spiritual exploration, self-discovery and introductory guidance.",
+    focusMatrixTitle: "Psychomatrix insight",
+    focusMatrixBody: "Explore personality patterns, strengths and inner resources through a calm psychomatrix perspective.",
+    focusEnergyTitle: "Energy and harmony",
+    focusEnergyBody: "Read about spiritual practices, energy balance and inner harmony in a careful, introductory way.",
+    focusLanguageTitle: "International access",
+    focusLanguageBody: "Use EnneaLuma in English, German, French, Spanish, Italian, Arabic, Chinese, Dutch, Polish and Luxembourgish.",
     consultationTitle: "Free consultation",
     consultationBody: "The first full consultation is free of charge. Ask questions, get to know the project, and experience an initial consultation.",
     consultationCardTitle: "First full consultation free of charge",
@@ -240,6 +296,16 @@ const translations = {
     medicalDisclaimer: "EnneaLuma is not related to medicine, does not constitute a medical service, and does not replace medical assistance, diagnosis, psychotherapy, or treatment.",
     footerText: "International psychomatrix and spiritual exploration project.",
     footerDisclaimer: "Not a medical service.",
+    faqTitle: "Frequently asked questions",
+    faqBody: "Key information about consultations, languages, payment and the medical disclaimer.",
+    faqFreeQuestion: "Is the first consultation really free?",
+    faqFreeAnswer: "Yes. The first full consultation is completely free of charge so you can become familiar with the project, ask questions and experience an initial consultation.",
+    faqPaymentQuestion: "How does payment work after the first consultation?",
+    faqPaymentAnswer: "Starting from the second consultation, services are paid. Payment can be made through PayPal after confirmation by e-mail.",
+    faqLanguagesQuestion: "Which languages does EnneaLuma support?",
+    faqLanguagesAnswer: "The website supports English, German, French, Spanish, Italian, Arabic, Chinese, Dutch, Polish and Luxembourgish. Arabic uses a right-to-left layout.",
+    faqMedicalQuestion: "Is EnneaLuma a medical or psychotherapy service?",
+    faqMedicalAnswer: "No. EnneaLuma is not related to medicine, does not constitute a medical service, and does not replace medical assistance, diagnosis, psychotherapy, or treatment.",
     requestSubject: "Request a Free First Consultation",
     contactSubject: "Contact EnneaLuma"
   },
@@ -252,6 +318,7 @@ const translations = {
     navOfficial: "Offizieller Text",
     navConsultation: "Kostenlose Beratung",
     navPayment: "Zahlung",
+    navFaq: "FAQ",
     navContact: "Kontakt",
     languageLabel: "Sprache",
     heroEyebrow: "Internationales spirituelles Projekt",
@@ -272,6 +339,20 @@ const translations = {
     storyClarity: "Innere Klarheit",
     storyDevelopment: "Spirituelle Entwicklung",
     storyBalance: "Energie-Balance",
+    storyClarityBody: "Ein sanftes Matrixbild für Reflexion, Fokus und persönliche Einsicht.",
+    storyDevelopmentBody: "Ein ruhiger visueller Weg für Wachstum, Selbsterkenntnis und bewusste Entscheidungen.",
+    storyBalanceBody: "Sanfte grüne und violette Formen für Harmonie, Schutz und Balance.",
+    imageClarityAlt: "Psychomatrix mit weichem zentralem Licht für innere Klarheit",
+    imageDevelopmentAlt: "Lichtweg als Symbol für spirituelle Entwicklung und Selbsterkenntnis",
+    imageBalanceAlt: "Grünes und violettes Harmoniesymbol für Energie-Balance",
+    focusTitle: "Psychomatrix, Energiepraktiken und innere Balance",
+    focusBody: "EnneaLuma verbindet die Projektthemen in einem klaren, mehrsprachigen Raum für spirituelle Erforschung, Selbsterkenntnis und einführende Begleitung.",
+    focusMatrixTitle: "Psychomatrix-Einsicht",
+    focusMatrixBody: "Erkunden Sie Persönlichkeitsmuster, Stärken und innere Ressourcen aus einer ruhigen Psychomatrix-Perspektive.",
+    focusEnergyTitle: "Energie und Harmonie",
+    focusEnergyBody: "Lesen Sie über spirituelle Praktiken, Energie-Balance und innere Harmonie auf sorgfältige, einführende Weise.",
+    focusLanguageTitle: "Internationaler Zugang",
+    focusLanguageBody: "Nutzen Sie EnneaLuma auf Englisch, Deutsch, Französisch, Spanisch, Italienisch, Arabisch, Chinesisch, Niederländisch, Polnisch und Luxemburgisch.",
     consultationTitle: "Kostenlose Beratung",
     consultationBody: "Die erste vollständige Beratung ist kostenlos. Stellen Sie Fragen, lernen Sie das Projekt kennen und erleben Sie eine erste Beratung.",
     consultationCardTitle: "Erste vollständige Beratung kostenlos",
@@ -296,6 +377,16 @@ const translations = {
     medicalDisclaimer: "EnneaLuma steht nicht mit Medizin in Verbindung, stellt keine medizinische Dienstleistung dar und ersetzt keine medizinische Hilfe, Diagnose, Psychotherapie oder Behandlung.",
     footerText: "Internationales Projekt für Psychomatrix und spirituelle Entdeckung.",
     footerDisclaimer: "Kein medizinischer Service.",
+    faqTitle: "Häufige Fragen",
+    faqBody: "Wichtige Informationen zu Beratungen, Sprachen, Zahlung und medizinischem Hinweis.",
+    faqFreeQuestion: "Ist die erste Beratung wirklich kostenlos?",
+    faqFreeAnswer: "Ja. Die erste vollständige Beratung ist komplett kostenlos, damit Sie das Projekt kennenlernen, Fragen stellen und eine erste Beratung erleben können.",
+    faqPaymentQuestion: "Wie funktioniert die Zahlung nach der ersten Beratung?",
+    faqPaymentAnswer: "Ab der zweiten Beratung sind die Leistungen kostenpflichtig. Die Zahlung kann nach Bestätigung per E-Mail über PayPal erfolgen.",
+    faqLanguagesQuestion: "Welche Sprachen unterstützt EnneaLuma?",
+    faqLanguagesAnswer: "Die Website unterstützt Englisch, Deutsch, Französisch, Spanisch, Italienisch, Arabisch, Chinesisch, Niederländisch, Polnisch und Luxemburgisch. Arabisch nutzt ein Layout von rechts nach links.",
+    faqMedicalQuestion: "Ist EnneaLuma ein medizinischer oder psychotherapeutischer Service?",
+    faqMedicalAnswer: "Nein. EnneaLuma steht nicht mit Medizin in Verbindung, stellt keine medizinische Dienstleistung dar und ersetzt keine medizinische Hilfe, Diagnose, Psychotherapie oder Behandlung.",
     requestSubject: "Kostenlose Erstberatung anfragen",
     contactSubject: "Kontakt mit EnneaLuma"
   },
@@ -308,6 +399,7 @@ const translations = {
     navOfficial: "Texte officiel",
     navConsultation: "Consultation gratuite",
     navPayment: "Paiement",
+    navFaq: "FAQ",
     navContact: "Contact",
     languageLabel: "Langue",
     heroEyebrow: "Projet spirituel international",
@@ -328,6 +420,20 @@ const translations = {
     storyClarity: "Clarté intérieure",
     storyDevelopment: "Développement spirituel",
     storyBalance: "Équilibre énergétique",
+    storyClarityBody: "Une image matricielle douce pour la réflexion, la concentration et la compréhension personnelle.",
+    storyDevelopmentBody: "Un chemin visuel calme pour la croissance, la découverte de soi et les choix conscients.",
+    storyBalanceBody: "Des formes vertes et violettes douces pour l'harmonie, la protection et l'équilibre.",
+    imageClarityAlt: "Psychomatrix avec une lumière centrale douce pour la clarté intérieure",
+    imageDevelopmentAlt: "Chemin de lumière symbolisant le développement spirituel et la découverte de soi",
+    imageBalanceAlt: "Symbole d'harmonie vert et violet pour l'équilibre énergétique",
+    focusTitle: "Psychomatrix, pratiques énergétiques et équilibre intérieur",
+    focusBody: "EnneaLuma réunit les thèmes du projet dans un espace clair et multilingue pour l'exploration spirituelle, la découverte de soi et un accompagnement introductif.",
+    focusMatrixTitle: "Compréhension psychomatrix",
+    focusMatrixBody: "Explorez les schémas de personnalité, les forces et les ressources intérieures à travers une perspective psychomatrix calme.",
+    focusEnergyTitle: "Énergie et harmonie",
+    focusEnergyBody: "Lisez sur les pratiques spirituelles, l'équilibre énergétique et l'harmonie intérieure d'une manière attentive et introductive.",
+    focusLanguageTitle: "Accès international",
+    focusLanguageBody: "Utilisez EnneaLuma en anglais, allemand, français, espagnol, italien, arabe, chinois, néerlandais, polonais et luxembourgeois.",
     consultationTitle: "Consultation gratuite",
     consultationBody: "La première consultation complète est gratuite. Posez vos questions, découvrez le projet et vivez une première consultation.",
     consultationCardTitle: "Première consultation complète gratuite",
@@ -352,6 +458,16 @@ const translations = {
     medicalDisclaimer: "EnneaLuma n'est pas lié à la médecine, ne constitue pas un service médical et ne remplace pas l'aide médicale, le diagnostic, la psychothérapie ou le traitement.",
     footerText: "Projet international de psychomatrix et d'exploration spirituelle.",
     footerDisclaimer: "Pas un service médical.",
+    faqTitle: "Questions fréquentes",
+    faqBody: "Informations clés sur les consultations, les langues, le paiement et l'avertissement médical.",
+    faqFreeQuestion: "La première consultation est-elle vraiment gratuite ?",
+    faqFreeAnswer: "Oui. La première consultation complète est entièrement gratuite afin que vous puissiez découvrir le projet, poser des questions et vivre une consultation initiale.",
+    faqPaymentQuestion: "Comment fonctionne le paiement après la première consultation ?",
+    faqPaymentAnswer: "À partir de la deuxième consultation, les services sont payants. Le paiement peut être effectué via PayPal après confirmation par e-mail.",
+    faqLanguagesQuestion: "Quelles langues EnneaLuma prend-il en charge ?",
+    faqLanguagesAnswer: "Le site prend en charge l'anglais, l'allemand, le français, l'espagnol, l'italien, l'arabe, le chinois, le néerlandais, le polonais et le luxembourgeois. L'arabe utilise une mise en page de droite à gauche.",
+    faqMedicalQuestion: "EnneaLuma est-il un service médical ou de psychothérapie ?",
+    faqMedicalAnswer: "Non. EnneaLuma n'est pas lié à la médecine, ne constitue pas un service médical et ne remplace pas l'aide médicale, le diagnostic, la psychothérapie ou le traitement.",
     requestSubject: "Demande de premiere consultation gratuite",
     contactSubject: "Contact EnneaLuma"
   },
@@ -364,6 +480,7 @@ const translations = {
     navOfficial: "Texto oficial",
     navConsultation: "Consulta gratuita",
     navPayment: "Pago",
+    navFaq: "FAQ",
     navContact: "Contacto",
     languageLabel: "Idioma",
     heroEyebrow: "Proyecto espiritual internacional",
@@ -384,6 +501,20 @@ const translations = {
     storyClarity: "Claridad interior",
     storyDevelopment: "Desarrollo espiritual",
     storyBalance: "Equilibrio energético",
+    storyClarityBody: "Una imagen matricial suave para la reflexión, el enfoque y la comprensión personal.",
+    storyDevelopmentBody: "Un camino visual sereno para el crecimiento, el autodescubrimiento y las decisiones conscientes.",
+    storyBalanceBody: "Formas verdes y púrpuras suaves para la armonía, la protección y el equilibrio.",
+    imageClarityAlt: "Psychomatrix con una luz central suave para la claridad interior",
+    imageDevelopmentAlt: "Camino de luz que simboliza el desarrollo espiritual y el autodescubrimiento",
+    imageBalanceAlt: "Símbolo de armonía verde y púrpura para el equilibrio energético",
+    focusTitle: "Psychomatrix, prácticas energéticas y equilibrio interior",
+    focusBody: "EnneaLuma reúne los temas del proyecto en un espacio claro y multilingüe para la exploración espiritual, el autodescubrimiento y la orientación introductoria.",
+    focusMatrixTitle: "Perspectiva psychomatrix",
+    focusMatrixBody: "Explora patrones de personalidad, fortalezas y recursos internos desde una perspectiva psychomatrix serena.",
+    focusEnergyTitle: "Energía y armonía",
+    focusEnergyBody: "Lee sobre prácticas espirituales, equilibrio energético y armonía interior de una manera cuidadosa e introductoria.",
+    focusLanguageTitle: "Acceso internacional",
+    focusLanguageBody: "Usa EnneaLuma en inglés, alemán, francés, español, italiano, árabe, chino, neerlandés, polaco y luxemburgués.",
     consultationTitle: "Consulta gratuita",
     consultationBody: "La primera consulta completa es gratuita. Haz preguntas, conoce el proyecto y vive una consulta inicial.",
     consultationCardTitle: "Primera consulta completa gratuita",
@@ -408,6 +539,16 @@ const translations = {
     medicalDisclaimer: "EnneaLuma no está relacionado con la medicina, no constituye un servicio médico y no reemplaza la asistencia médica, el diagnóstico, la psicoterapia ni el tratamiento.",
     footerText: "Proyecto internacional de psychomatrix y exploración espiritual.",
     footerDisclaimer: "No es un servicio médico.",
+    faqTitle: "Preguntas frecuentes",
+    faqBody: "Información clave sobre consultas, idiomas, pago y aviso médico.",
+    faqFreeQuestion: "¿La primera consulta es realmente gratuita?",
+    faqFreeAnswer: "Sí. La primera consulta completa es totalmente gratuita para que puedas conocer el proyecto, hacer preguntas y experimentar una consulta inicial.",
+    faqPaymentQuestion: "¿Cómo funciona el pago después de la primera consulta?",
+    faqPaymentAnswer: "A partir de la segunda consulta, los servicios son de pago. El pago puede realizarse a través de PayPal después de la confirmación por email.",
+    faqLanguagesQuestion: "¿Qué idiomas admite EnneaLuma?",
+    faqLanguagesAnswer: "El sitio web admite inglés, alemán, francés, español, italiano, árabe, chino, neerlandés, polaco y luxemburgués. El árabe utiliza un diseño de derecha a izquierda.",
+    faqMedicalQuestion: "¿EnneaLuma es un servicio médico o de psicoterapia?",
+    faqMedicalAnswer: "No. EnneaLuma no está relacionado con la medicina, no constituye un servicio médico y no reemplaza la asistencia médica, el diagnóstico, la psicoterapia ni el tratamiento.",
     requestSubject: "Solicitud de primera consulta gratuita",
     contactSubject: "Contacto EnneaLuma"
   },
@@ -420,6 +561,7 @@ const translations = {
     navOfficial: "Testo ufficiale",
     navConsultation: "Consultazione gratuita",
     navPayment: "Pagamento",
+    navFaq: "FAQ",
     navContact: "Contatto",
     languageLabel: "Lingua",
     heroEyebrow: "Progetto spirituale internazionale",
@@ -440,6 +582,20 @@ const translations = {
     storyClarity: "Chiarezza interiore",
     storyDevelopment: "Sviluppo spirituale",
     storyBalance: "Equilibrio energetico",
+    storyClarityBody: "Un'immagine matriciale delicata per riflessione, concentrazione e intuizione personale.",
+    storyDevelopmentBody: "Un percorso visivo sereno per crescita, scoperta di sé e scelte consapevoli.",
+    storyBalanceBody: "Forme verdi e viola delicate per armonia, protezione ed equilibrio.",
+    imageClarityAlt: "Psychomatrix con una luce centrale morbida per la chiarezza interiore",
+    imageDevelopmentAlt: "Percorso di luce che simboleggia sviluppo spirituale e scoperta di sé",
+    imageBalanceAlt: "Simbolo di armonia verde e viola per l'equilibrio energetico",
+    focusTitle: "Psychomatrix, pratiche energetiche ed equilibrio interiore",
+    focusBody: "EnneaLuma riunisce i temi del progetto in uno spazio chiaro e multilingue per esplorazione spirituale, scoperta di sé e guida introduttiva.",
+    focusMatrixTitle: "Intuizione psychomatrix",
+    focusMatrixBody: "Esplora schemi di personalità, punti di forza e risorse interiori attraverso una prospettiva psychomatrix calma.",
+    focusEnergyTitle: "Energia e armonia",
+    focusEnergyBody: "Leggi di pratiche spirituali, equilibrio energetico e armonia interiore in modo attento e introduttivo.",
+    focusLanguageTitle: "Accesso internazionale",
+    focusLanguageBody: "Usa EnneaLuma in inglese, tedesco, francese, spagnolo, italiano, arabo, cinese, olandese, polacco e lussemburghese.",
     consultationTitle: "Consultazione gratuita",
     consultationBody: "La prima consultazione completa è gratuita. Fai domande, conosci il progetto e vivi una consultazione iniziale.",
     consultationCardTitle: "Prima consultazione completa gratuita",
@@ -464,6 +620,16 @@ const translations = {
     medicalDisclaimer: "EnneaLuma non è collegata alla medicina, non costituisce un servizio medico e non sostituisce assistenza medica, diagnosi, psicoterapia o trattamento.",
     footerText: "Progetto internazionale di psychomatrix ed esplorazione spirituale.",
     footerDisclaimer: "Non è un servizio medico.",
+    faqTitle: "Domande frequenti",
+    faqBody: "Informazioni chiave su consultazioni, lingue, pagamento e disclaimer medico.",
+    faqFreeQuestion: "La prima consultazione è davvero gratuita?",
+    faqFreeAnswer: "Sì. La prima consultazione completa è interamente gratuita, così puoi conoscere il progetto, fare domande e vivere una consultazione iniziale.",
+    faqPaymentQuestion: "Come funziona il pagamento dopo la prima consultazione?",
+    faqPaymentAnswer: "A partire dalla seconda consultazione, i servizi sono a pagamento. Il pagamento può essere effettuato tramite PayPal dopo conferma via email.",
+    faqLanguagesQuestion: "Quali lingue supporta EnneaLuma?",
+    faqLanguagesAnswer: "Il sito supporta inglese, tedesco, francese, spagnolo, italiano, arabo, cinese, olandese, polacco e lussemburghese. L'arabo usa un layout da destra a sinistra.",
+    faqMedicalQuestion: "EnneaLuma è un servizio medico o di psicoterapia?",
+    faqMedicalAnswer: "No. EnneaLuma non è collegata alla medicina, non costituisce un servizio medico e non sostituisce assistenza medica, diagnosi, psicoterapia o trattamento.",
     requestSubject: "Richiesta di prima consultazione gratuita",
     contactSubject: "Contatto EnneaLuma"
   },
@@ -476,6 +642,7 @@ const translations = {
     navOfficial: "النص الرسمي",
     navConsultation: "استشارة مجانية",
     navPayment: "الدفع",
+    navFaq: "الأسئلة الشائعة",
     navContact: "تواصل",
     languageLabel: "اللغة",
     heroEyebrow: "مشروع روحي دولي",
@@ -496,6 +663,20 @@ const translations = {
     storyClarity: "وضوح داخلي",
     storyDevelopment: "تطور روحي",
     storyBalance: "توازن الطاقة",
+    storyClarityBody: "صورة مصفوفة هادئة للتأمل والتركيز والفهم الشخصي.",
+    storyDevelopmentBody: "مسار بصري هادئ للنمو واكتشاف الذات والاختيارات الواعية.",
+    storyBalanceBody: "أشكال خضراء وبنفسجية لطيفة للانسجام والحماية والتوازن.",
+    imageClarityAlt: "مصفوفة نفسية مع ضوء مركزي ناعم للوضوح الداخلي",
+    imageDevelopmentAlt: "مسار من الضوء يرمز إلى التطور الروحي واكتشاف الذات",
+    imageBalanceAlt: "رمز انسجام أخضر وبنفسجي لتوازن الطاقة",
+    focusTitle: "المصفوفة النفسية وممارسات الطاقة والتوازن الداخلي",
+    focusBody: "يجمع EnneaLuma موضوعات المشروع في مساحة واضحة ومتعددة اللغات للاستكشاف الروحي واكتشاف الذات والإرشاد التمهيدي.",
+    focusMatrixTitle: "رؤية المصفوفة النفسية",
+    focusMatrixBody: "استكشف أنماط الشخصية ونقاط القوة والموارد الداخلية من منظور هادئ للمصفوفة النفسية.",
+    focusEnergyTitle: "الطاقة والانسجام",
+    focusEnergyBody: "اقرأ عن الممارسات الروحية وتوازن الطاقة والانسجام الداخلي بطريقة حذرة وتمهيدية.",
+    focusLanguageTitle: "وصول دولي",
+    focusLanguageBody: "استخدم EnneaLuma بالإنجليزية والألمانية والفرنسية والإسبانية والإيطالية والعربية والصينية والهولندية والبولندية واللوكسمبورغية.",
     consultationTitle: "استشارة مجانية",
     consultationBody: "الاستشارة الكاملة الأولى مجانية. يمكنك طرح الأسئلة والتعرف إلى المشروع وتجربة استشارة أولية.",
     consultationCardTitle: "الاستشارة الكاملة الأولى مجانية",
@@ -520,6 +701,16 @@ const translations = {
     medicalDisclaimer: "EnneaLuma ليست مرتبطة بالطب، ولا تشكل خدمة طبية، ولا تحل محل المساعدة الطبية أو التشخيص أو العلاج النفسي أو العلاج.",
     footerText: "مشروع دولي للمصفوفة النفسية والاستكشاف الروحي.",
     footerDisclaimer: "ليست خدمة طبية.",
+    faqTitle: "الأسئلة الشائعة",
+    faqBody: "معلومات أساسية حول الاستشارات واللغات والدفع وإخلاء المسؤولية الطبية.",
+    faqFreeQuestion: "هل الاستشارة الأولى مجانية حقًا؟",
+    faqFreeAnswer: "نعم. الاستشارة الكاملة الأولى مجانية تمامًا حتى تتمكن من التعرف إلى المشروع وطرح الأسئلة وتجربة استشارة أولية.",
+    faqPaymentQuestion: "كيف يتم الدفع بعد الاستشارة الأولى؟",
+    faqPaymentAnswer: "ابتداءً من الاستشارة الثانية، تكون الخدمات مدفوعة. يمكن الدفع عبر PayPal بعد التأكيد بالبريد الإلكتروني.",
+    faqLanguagesQuestion: "ما اللغات التي يدعمها EnneaLuma؟",
+    faqLanguagesAnswer: "يدعم الموقع الإنجليزية والألمانية والفرنسية والإسبانية والإيطالية والعربية والصينية والهولندية والبولندية واللوكسمبورغية. تستخدم العربية تخطيطًا من اليمين إلى اليسار.",
+    faqMedicalQuestion: "هل EnneaLuma خدمة طبية أو علاج نفسي؟",
+    faqMedicalAnswer: "لا. EnneaLuma ليست مرتبطة بالطب، ولا تشكل خدمة طبية، ولا تحل محل المساعدة الطبية أو التشخيص أو العلاج النفسي أو العلاج.",
     requestSubject: "طلب الاستشارة الأولى المجانية",
     contactSubject: "تواصل مع EnneaLuma"
   },
@@ -532,6 +723,7 @@ const translations = {
     navOfficial: "官方文本",
     navConsultation: "免费咨询",
     navPayment: "付款",
+    navFaq: "常见问题",
     navContact: "联系",
     languageLabel: "语言",
     heroEyebrow: "国际灵性项目",
@@ -552,6 +744,20 @@ const translations = {
     storyClarity: "内在清晰",
     storyDevelopment: "灵性发展",
     storyBalance: "能量平衡",
+    storyClarityBody: "柔和的矩阵图像，用于反思、专注和个人洞察。",
+    storyDevelopmentBody: "一条宁静的视觉光路，象征成长、自我发现和有意识的选择。",
+    storyBalanceBody: "柔和的绿色与紫色形态，象征和谐、保护与平衡。",
+    imageClarityAlt: "带有柔和中央光的心理矩阵，用于内在清晰",
+    imageDevelopmentAlt: "象征灵性发展和自我发现的光路",
+    imageBalanceAlt: "用于能量平衡的绿色与紫色和谐符号",
+    focusTitle: "心理矩阵、能量实践与内在平衡",
+    focusBody: "EnneaLuma 将项目主题汇集在一个清晰的多语言空间中，用于灵性探索、自我发现和入门指导。",
+    focusMatrixTitle: "心理矩阵洞察",
+    focusMatrixBody: "从平静的心理矩阵角度探索人格模式、优势和内在资源。",
+    focusEnergyTitle: "能量与和谐",
+    focusEnergyBody: "以谨慎且入门的方式阅读灵性实践、能量平衡和内在和谐。",
+    focusLanguageTitle: "国际访问",
+    focusLanguageBody: "可使用英语、德语、法语、西班牙语、意大利语、阿拉伯语、中文、荷兰语、波兰语和卢森堡语浏览 EnneaLuma。",
     consultationTitle: "免费咨询",
     consultationBody: "首次完整咨询免费。你可以提问、了解项目，并体验一次初始咨询。",
     consultationCardTitle: "首次完整咨询免费",
@@ -576,6 +782,16 @@ const translations = {
     medicalDisclaimer: "EnneaLuma 与医学无关，不构成医疗服务，也不能替代医疗帮助、诊断、心理治疗或治疗。",
     footerText: "国际心理矩阵与灵性探索项目。",
     footerDisclaimer: "非医疗服务。",
+    faqTitle: "常见问题",
+    faqBody: "关于咨询、语言、付款和医疗免责声明的关键信息。",
+    faqFreeQuestion: "第一次咨询真的免费吗？",
+    faqFreeAnswer: "是的。第一次完整咨询完全免费，因此你可以熟悉项目、提出问题并体验初始咨询。",
+    faqPaymentQuestion: "第一次咨询之后如何付款？",
+    faqPaymentAnswer: "从第二次咨询开始，服务为付费服务。经电子邮件确认后，可通过 PayPal 付款。",
+    faqLanguagesQuestion: "EnneaLuma 支持哪些语言？",
+    faqLanguagesAnswer: "本网站支持英语、德语、法语、西班牙语、意大利语、阿拉伯语、中文、荷兰语、波兰语和卢森堡语。阿拉伯语使用从右到左的布局。",
+    faqMedicalQuestion: "EnneaLuma 是医疗或心理治疗服务吗？",
+    faqMedicalAnswer: "不是。EnneaLuma 与医学无关，不构成医疗服务，也不能替代医疗帮助、诊断、心理治疗或治疗。",
     requestSubject: "申请首次免费咨询",
     contactSubject: "联系 EnneaLuma"
   },
@@ -588,6 +804,7 @@ const translations = {
     navOfficial: "Officiële tekst",
     navConsultation: "Gratis consultatie",
     navPayment: "Betaling",
+    navFaq: "FAQ",
     navContact: "Contact",
     languageLabel: "Taal",
     heroEyebrow: "Internationaal spiritueel project",
@@ -608,6 +825,20 @@ const translations = {
     storyClarity: "Innerlijke helderheid",
     storyDevelopment: "Spirituele ontwikkeling",
     storyBalance: "Energiebalans",
+    storyClarityBody: "Een zachte matrixafbeelding voor reflectie, focus en persoonlijk inzicht.",
+    storyDevelopmentBody: "Een rustig visueel pad voor groei, zelfontdekking en bewuste keuzes.",
+    storyBalanceBody: "Zachte groene en paarse vormen voor harmonie, bescherming en balans.",
+    imageClarityAlt: "Psychomatrix met zacht centraal licht voor innerlijke helderheid",
+    imageDevelopmentAlt: "Lichtpad dat spirituele ontwikkeling en zelfontdekking symboliseert",
+    imageBalanceAlt: "Groen en paars harmoniesymbool voor energiebalans",
+    focusTitle: "Psychomatrix, energiepraktijken en innerlijke balans",
+    focusBody: "EnneaLuma brengt de projectthema's samen in een heldere, meertalige ruimte voor spirituele verkenning, zelfontdekking en introductieve begeleiding.",
+    focusMatrixTitle: "Psychomatrix-inzicht",
+    focusMatrixBody: "Verken persoonlijkheidspatronen, sterke kanten en innerlijke hulpbronnen vanuit een rustige psychomatrix-benadering.",
+    focusEnergyTitle: "Energie en harmonie",
+    focusEnergyBody: "Lees op een zorgvuldige en introductieve manier over spirituele praktijken, energiebalans en innerlijke harmonie.",
+    focusLanguageTitle: "Internationale toegang",
+    focusLanguageBody: "Gebruik EnneaLuma in het Engels, Duits, Frans, Spaans, Italiaans, Arabisch, Chinees, Nederlands, Pools en Luxemburgs.",
     consultationTitle: "Gratis consultatie",
     consultationBody: "De eerste volledige consultatie is gratis. Stel vragen, leer het project kennen en ervaar een eerste consultatie.",
     consultationCardTitle: "Eerste volledige consultatie gratis",
@@ -632,6 +863,16 @@ const translations = {
     medicalDisclaimer: "EnneaLuma is niet gerelateerd aan geneeskunde, vormt geen medische dienst en vervangt geen medische hulp, diagnose, psychotherapie of behandeling.",
     footerText: "Internationaal project voor psychomatrix en spirituele verkenning.",
     footerDisclaimer: "Geen medische dienst.",
+    faqTitle: "Veelgestelde vragen",
+    faqBody: "Belangrijke informatie over consultaties, talen, betaling en de medische disclaimer.",
+    faqFreeQuestion: "Is de eerste consultatie echt gratis?",
+    faqFreeAnswer: "Ja. De eerste volledige consultatie is volledig gratis, zodat je kennis kunt maken met het project, vragen kunt stellen en een eerste consultatie kunt ervaren.",
+    faqPaymentQuestion: "Hoe werkt betaling na de eerste consultatie?",
+    faqPaymentAnswer: "Vanaf de tweede consultatie zijn de diensten betaald. Betaling kan via PayPal na bevestiging per e-mail.",
+    faqLanguagesQuestion: "Welke talen ondersteunt EnneaLuma?",
+    faqLanguagesAnswer: "De website ondersteunt Engels, Duits, Frans, Spaans, Italiaans, Arabisch, Chinees, Nederlands, Pools en Luxemburgs. Arabisch gebruikt een rechts-naar-links lay-out.",
+    faqMedicalQuestion: "Is EnneaLuma een medische dienst of psychotherapiedienst?",
+    faqMedicalAnswer: "Nee. EnneaLuma is niet gerelateerd aan geneeskunde, vormt geen medische dienst en vervangt geen medische hulp, diagnose, psychotherapie of behandeling.",
     requestSubject: "Gratis eerste consultatie aanvragen",
     contactSubject: "Contact met EnneaLuma"
   },
@@ -644,6 +885,7 @@ const translations = {
     navOfficial: "Tekst oficjalny",
     navConsultation: "Bezpłatna konsultacja",
     navPayment: "Płatność",
+    navFaq: "FAQ",
     navContact: "Kontakt",
     languageLabel: "Język",
     heroEyebrow: "Międzynarodowy projekt duchowy",
@@ -664,6 +906,20 @@ const translations = {
     storyClarity: "Wewnętrzna jasność",
     storyDevelopment: "Rozwój duchowy",
     storyBalance: "Równowaga energetyczna",
+    storyClarityBody: "Delikatny obraz matrycy do refleksji, skupienia i osobistego wglądu.",
+    storyDevelopmentBody: "Spokojna wizualna ścieżka dla rozwoju, samopoznania i świadomych wyborów.",
+    storyBalanceBody: "Delikatne zielone i fioletowe formy dla harmonii, ochrony i równowagi.",
+    imageClarityAlt: "Psychomatryca z miękkim centralnym światłem dla wewnętrznej jasności",
+    imageDevelopmentAlt: "Ścieżka światła symbolizująca rozwój duchowy i samopoznanie",
+    imageBalanceAlt: "Zielono-fioletowy symbol harmonii dla równowagi energetycznej",
+    focusTitle: "Psychomatryca, praktyki energetyczne i wewnętrzna równowaga",
+    focusBody: "EnneaLuma łączy tematy projektu w jasnej, wielojęzycznej przestrzeni dla duchowych poszukiwań, samopoznania i wprowadzającego wsparcia.",
+    focusMatrixTitle: "Wgląd psychomatrycy",
+    focusMatrixBody: "Odkrywaj wzorce osobowości, mocne strony i wewnętrzne zasoby z spokojnej perspektywy psychomatrycy.",
+    focusEnergyTitle: "Energia i harmonia",
+    focusEnergyBody: "Czytaj o praktykach duchowych, równowadze energetycznej i wewnętrznej harmonii w ostrożny, wprowadzający sposób.",
+    focusLanguageTitle: "Dostęp międzynarodowy",
+    focusLanguageBody: "Korzystaj z EnneaLuma po angielsku, niemiecku, francusku, hiszpańsku, włosku, arabsku, chińsku, niderlandzku, polsku i luksembursku.",
     consultationTitle: "Bezpłatna konsultacja",
     consultationBody: "Pierwsza pełna konsultacja jest bezpłatna. Zadawaj pytania, poznaj projekt i doświadcz wstępnej konsultacji.",
     consultationCardTitle: "Pierwsza pełna konsultacja bezpłatna",
@@ -688,6 +944,16 @@ const translations = {
     medicalDisclaimer: "EnneaLuma nie jest związana z medycyną, nie stanowi usługi medycznej i nie zastępuje pomocy medycznej, diagnozy, psychoterapii ani leczenia.",
     footerText: "Międzynarodowy projekt psychomatrycy i duchowych poszukiwań.",
     footerDisclaimer: "To nie jest usługa medyczna.",
+    faqTitle: "Najczęstsze pytania",
+    faqBody: "Kluczowe informacje o konsultacjach, językach, płatności i zastrzeżeniu medycznym.",
+    faqFreeQuestion: "Czy pierwsza konsultacja jest naprawdę bezpłatna?",
+    faqFreeAnswer: "Tak. Pierwsza pełna konsultacja jest całkowicie bezpłatna, aby można było poznać projekt, zadać pytania i doświadczyć wstępnej konsultacji.",
+    faqPaymentQuestion: "Jak działa płatność po pierwszej konsultacji?",
+    faqPaymentAnswer: "Od drugiej konsultacji usługi są płatne. Płatność można wykonać przez PayPal po potwierdzeniu e-mailem.",
+    faqLanguagesQuestion: "Jakie języki obsługuje EnneaLuma?",
+    faqLanguagesAnswer: "Strona obsługuje angielski, niemiecki, francuski, hiszpański, włoski, arabski, chiński, niderlandzki, polski i luksemburski. Język arabski używa układu od prawej do lewej.",
+    faqMedicalQuestion: "Czy EnneaLuma jest usługą medyczną lub psychoterapeutyczną?",
+    faqMedicalAnswer: "Nie. EnneaLuma nie jest związana z medycyną, nie stanowi usługi medycznej i nie zastępuje pomocy medycznej, diagnozy, psychoterapii ani leczenia.",
     requestSubject: "Prośba o bezpłatną pierwszą konsultację",
     contactSubject: "Kontakt z EnneaLuma"
   },
@@ -700,6 +966,7 @@ const translations = {
     navOfficial: "Offizielle Text",
     navConsultation: "Gratis Consultatioun",
     navPayment: "Bezuelung",
+    navFaq: "FAQ",
     navContact: "Kontakt",
     languageLabel: "Sprooch",
     heroEyebrow: "Internationalen spirituelle Projet",
@@ -720,6 +987,20 @@ const translations = {
     storyClarity: "Bannenzeg Kloerheet",
     storyDevelopment: "Spirituell Entwécklung",
     storyBalance: "Energiegläichgewiicht",
+    storyClarityBody: "E sanft Matrixbild fir Reflexioun, Fokus a perséinlech Asiicht.",
+    storyDevelopmentBody: "E rouege visuelle Wee fir Wuesstem, Selbstentdeckung a bewosst Entscheedungen.",
+    storyBalanceBody: "Sanft gréng a violett Formen fir Harmonie, Schutz a Gläichgewiicht.",
+    imageClarityAlt: "Psychomatrix mat mëller zentraler Luucht fir bannenzeg Kloerheet",
+    imageDevelopmentAlt: "Liichtwee als Symbol fir spirituell Entwécklung a Selbstentdeckung",
+    imageBalanceAlt: "Gréngt a violett Harmonie-Symbol fir Energiegläichgewiicht",
+    focusTitle: "Psychomatrix, Energiepraktiken a bannescht Gläichgewiicht",
+    focusBody: "EnneaLuma bréngt d'Projetsthemen an engem kloeren, méisproochege Raum fir spirituell Exploratioun, Selbstentdeckung an aféierend Begleedung zesummen.",
+    focusMatrixTitle: "Psychomatrix-Asiicht",
+    focusMatrixBody: "Entdeckt Perséinlechkeetsmuster, Stäerkten a bannenzeg Ressourcen aus enger roueger Psychomatrix-Perspektiv.",
+    focusEnergyTitle: "Energie an Harmonie",
+    focusEnergyBody: "Liest iwwer spirituell Praktiken, Energiegläichgewiicht a bannescht Harmonie op eng virsiichteg, aféierend Manéier.",
+    focusLanguageTitle: "Internationalen Zougang",
+    focusLanguageBody: "Benotzt EnneaLuma op Englesch, Däitsch, Franséisch, Spuenesch, Italienesch, Arabesch, Chinesesch, Hollännesch, Polnesch a Lëtzebuergesch.",
     consultationTitle: "Gratis Consultatioun",
     consultationBody: "Déi éischt voll Consultatioun ass gratis. Stellt Froen, léiert de Projet kennen a maacht eng éischt Consultatioun.",
     consultationCardTitle: "Éischt voll Consultatioun gratis",
@@ -744,6 +1025,16 @@ const translations = {
     medicalDisclaimer: "EnneaLuma huet kee Bezuch zur Medezin, ass kee medezinesche Service a ersetzt keng medezinesch Hëllef, Diagnos, Psychotherapie oder Behandlung.",
     footerText: "Internationalen Projet fir Psychomatrix a spirituell Exploratioun.",
     footerDisclaimer: "Kee medezinesche Service.",
+    faqTitle: "Heefeg Froen",
+    faqBody: "Wichteg Informatiounen iwwer Consultatiounen, Sproochen, Bezuelung an de medezineschen Disclaimer.",
+    faqFreeQuestion: "Ass déi éischt Consultatioun wierklech gratis?",
+    faqFreeAnswer: "Jo. Déi éischt voll Consultatioun ass komplett gratis, fir datt Dir de Projet kenneléiere kënnt, Froen stelle kënnt an eng éischt Consultatioun erliewe kënnt.",
+    faqPaymentQuestion: "Wéi funktionéiert d'Bezuelung no der éischter Consultatioun?",
+    faqPaymentAnswer: "Vun der zweeter Consultatioun un si Servicer bezuelt. D'Bezuelung kann no Confirmatioun per E-Mail iwwer PayPal gemaach ginn.",
+    faqLanguagesQuestion: "Wéi eng Sprooche ënnerstëtzt EnneaLuma?",
+    faqLanguagesAnswer: "D'Websäit ënnerstëtzt Englesch, Däitsch, Franséisch, Spuenesch, Italienesch, Arabesch, Chinesesch, Hollännesch, Polnesch a Lëtzebuergesch. Arabesch benotzt en Layout vu riets no lénks.",
+    faqMedicalQuestion: "Ass EnneaLuma e medezineschen oder psychotherapeutesche Service?",
+    faqMedicalAnswer: "Nee. EnneaLuma huet kee Bezuch zur Medezin, ass kee medezinesche Service a ersetzt keng medezinesch Hëllef, Diagnos, Psychotherapie oder Behandlung.",
     requestSubject: "Gratis éischt Consultatioun ufroen",
     contactSubject: "Kontakt mat EnneaLuma"
   }
@@ -755,6 +1046,14 @@ const languageSelectCodeText = document.querySelector("#languageSelectCodeText")
 const languageSelectFlag = document.querySelector("#languageSelectFlag");
 const languageButtons = document.querySelectorAll("[data-lang-option]");
 const metaDescription = document.querySelector('meta[name="description"]');
+const canonicalLink = document.querySelector('link[rel="canonical"]');
+const ogTitle = document.querySelector('meta[property="og:title"]');
+const ogDescription = document.querySelector('meta[property="og:description"]');
+const ogUrl = document.querySelector('meta[property="og:url"]');
+const ogLocale = document.querySelector('meta[property="og:locale"]');
+const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+const structuredData = document.querySelector("#structuredData");
 const year = document.querySelector("#year");
 const reducedMotionQuery = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : null;
 
@@ -804,6 +1103,178 @@ function contactMailtoHref() {
   return CONSULTATION_MAILTO;
 }
 
+function localizedUrl(lang) {
+  return languageUrls[lang] || SITE_URL;
+}
+
+function updateMetaContent(node, content) {
+  if (node && content) {
+    node.setAttribute("content", content);
+  }
+}
+
+function updateBrowserUrl(lang) {
+  if (!window.history || !window.history.replaceState) return;
+
+  const nextUrl = new URL(window.location.href);
+  if (lang === "en") {
+    nextUrl.searchParams.delete("lang");
+  } else {
+    nextUrl.searchParams.set("lang", lang);
+  }
+
+  if (nextUrl.href !== window.location.href) {
+    window.history.replaceState({}, "", nextUrl.href);
+  }
+}
+
+function buildStructuredData(dictionary, lang) {
+  const url = localizedUrl(lang);
+  const organizationId = `${SITE_URL}#organization`;
+  const websiteId = `${SITE_URL}#website`;
+  const webpageId = `${url}#webpage`;
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": organizationId,
+        "name": "EnneaLuma",
+        "url": SITE_URL,
+        "logo": `${SITE_URL}assets/img/ennealuma-symbol.svg`,
+        "image": `${SITE_URL}assets/img/og-image.svg`,
+        "email": EMAIL,
+        "description": dictionary.metaDescription,
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "consultation request",
+          "email": EMAIL,
+          "availableLanguage": languageNames,
+          "areaServed": "Worldwide"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": websiteId,
+        "url": SITE_URL,
+        "name": "EnneaLuma",
+        "alternateName": dictionary.tagline,
+        "description": dictionary.metaDescription,
+        "publisher": { "@id": organizationId },
+        "inLanguage": lang
+      },
+      {
+        "@type": "WebPage",
+        "@id": webpageId,
+        "url": url,
+        "name": dictionary.documentTitle,
+        "description": dictionary.metaDescription,
+        "isPartOf": { "@id": websiteId },
+        "about": { "@id": organizationId },
+        "inLanguage": lang,
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": `${SITE_URL}assets/img/og-image.svg`
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": `${SITE_URL}#consultation-service`,
+        "name": dictionary.consultationTitle,
+        "description": dictionary.consultationBody,
+        "serviceType": dictionary.tagline,
+        "provider": { "@id": organizationId },
+        "areaServed": "Worldwide",
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceUrl": url,
+          "availableLanguage": languageNames
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": dictionary.consultationCardTitle,
+            "description": dictionary.consultationCardBody,
+            "price": "0",
+            "priceCurrency": "EUR",
+            "url": url
+          },
+          {
+            "@type": "Offer",
+            "name": dictionary.paymentCardTitle,
+            "description": dictionary.paymentCardBody,
+            "url": PAYPAL_URL
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${url}#faq`,
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": dictionary.faqFreeQuestion,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": dictionary.faqFreeAnswer
+            }
+          },
+          {
+            "@type": "Question",
+            "name": dictionary.faqPaymentQuestion,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": dictionary.faqPaymentAnswer
+            }
+          },
+          {
+            "@type": "Question",
+            "name": dictionary.faqLanguagesQuestion,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": dictionary.faqLanguagesAnswer
+            }
+          },
+          {
+            "@type": "Question",
+            "name": dictionary.faqMedicalQuestion,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": dictionary.faqMedicalAnswer
+            }
+          }
+        ]
+      }
+    ]
+  };
+}
+
+function updateStructuredData(dictionary, lang) {
+  if (structuredData) {
+    structuredData.textContent = JSON.stringify(buildStructuredData(dictionary, lang), null, 2);
+  }
+}
+
+function updatePageMetadata(dictionary, lang) {
+  const url = localizedUrl(lang);
+
+  document.title = dictionary.documentTitle;
+  updateMetaContent(metaDescription, dictionary.metaDescription);
+  updateMetaContent(ogTitle, dictionary.documentTitle);
+  updateMetaContent(ogDescription, dictionary.metaDescription);
+  updateMetaContent(ogUrl, url);
+  updateMetaContent(ogLocale, languageLocales[lang]);
+  updateMetaContent(twitterTitle, dictionary.documentTitle);
+  updateMetaContent(twitterDescription, dictionary.metaDescription);
+
+  if (canonicalLink) {
+    canonicalLink.setAttribute("href", url);
+  }
+
+  updateStructuredData(dictionary, lang);
+}
+
 function updateMotionPreference() {
   document.documentElement.dataset.motion = reducedMotionQuery && reducedMotionQuery.matches ? "reduce" : "no-preference";
 }
@@ -833,21 +1304,25 @@ function renderOfficialText(node, text) {
   });
 }
 
-function setLanguage(language) {
+function setLanguage(language, options = {}) {
   const lang = normalizeLanguage(language);
   const dictionary = translations[lang];
 
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
-  document.title = dictionary.documentTitle;
-  if (metaDescription) {
-    metaDescription.setAttribute("content", dictionary.metaDescription);
-  }
+  updatePageMetadata(dictionary, lang);
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const key = node.getAttribute("data-i18n");
     if (dictionary[key]) {
       node.textContent = dictionary[key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-alt]").forEach((node) => {
+    const key = node.getAttribute("data-i18n-alt");
+    if (dictionary[key]) {
+      node.setAttribute("alt", dictionary[key]);
     }
   });
 
@@ -893,6 +1368,10 @@ function setLanguage(language) {
   });
 
   window.localStorage.setItem("ennealuma-language", lang);
+
+  if (options.updateUrl) {
+    updateBrowserUrl(lang);
+  }
 }
 
 if (year) {
@@ -909,12 +1388,12 @@ if (reducedMotionQuery) {
 }
 
 languageSelect.addEventListener("change", (event) => {
-  setLanguage(event.target.value);
+  setLanguage(event.target.value, { updateUrl: true });
 });
 
 languageButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    setLanguage(button.getAttribute("data-lang-option"));
+    setLanguage(button.getAttribute("data-lang-option"), { updateUrl: true });
   });
 });
 

@@ -15,6 +15,15 @@ License note: Custom EnneaLuma decorative pattern retained in the repository.
 ### assets/img/og-image.svg
 License note: Custom EnneaLuma social preview asset retained in the repository.
 
+### assets/img/psychomatrix-inner-clarity.svg
+License note: Custom EnneaLuma visual story illustration created for this repository on June 26, 2026.
+
+### assets/img/spiritual-development-light-path.svg
+License note: Custom EnneaLuma visual story illustration created for this repository on June 26, 2026.
+
+### assets/img/energy-balance-harmony.svg
+License note: Custom EnneaLuma visual story illustration created for this repository on June 26, 2026.
+
 ## Deleted stock photo assets
 
 ### assets/img/hero-light-path.webp

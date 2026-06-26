@@ -460,15 +460,7 @@ h3 {
   position: relative;
   max-width: 680px;
   min-width: 0;
-  padding: clamp(24px, 3vw, 36px);
-  border: 1px solid rgba(167, 139, 199, 0.16);
-  border-radius: 28px;
-  background:
-    linear-gradient(135deg, rgba(255, 253, 247, 0.91), rgba(255, 253, 247, 0.68)),
-    rgba(255, 253, 247, 0.72);
-  box-shadow: 0 24px 70px rgba(62, 40, 95, 0.08);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  padding: 0;
 }
 
 .hero-tagline {
@@ -800,6 +792,7 @@ h3 {
 
 .visual-card-image {
   position: relative;
+  margin: 0;
   aspect-ratio: 32 / 21;
   overflow: hidden;
   background:
@@ -807,6 +800,12 @@ h3 {
     radial-gradient(circle at 22% 24%, rgba(255, 253, 247, 0.90), transparent 7rem),
     linear-gradient(135deg, rgba(237, 228, 245, 0.70), rgba(234, 245, 236, 0.72));
   background-size: 150px 150px, auto, auto;
+}
+
+.visual-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .visual-card-image::after {
@@ -858,16 +857,111 @@ h3 {
 
 .visual-card-content {
   position: relative;
-  min-height: 92px;
+  min-height: 150px;
   display: grid;
-  align-content: end;
-  padding: 22px 24px 24px;
+  align-content: start;
+  gap: 8px;
+  padding: 24px;
 }
 
 .story-card h3 {
   position: relative;
   max-width: 260px;
   margin: 0;
+}
+
+.story-card p {
+  position: relative;
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.62;
+}
+
+.focus-section {
+  border-block: 1px solid rgba(62, 40, 95, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 247, 0.78), rgba(234, 245, 236, 0.54)),
+    url("assets/img/matrix-pattern.svg?v=20260611-12");
+  background-size: auto, 160px 160px;
+}
+
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.focus-card {
+  min-width: 0;
+  min-height: 280px;
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  padding: 28px;
+  border: 1px solid rgba(62, 40, 95, 0.12);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.86), rgba(255, 253, 247, 0.70)),
+    var(--paper);
+  box-shadow: var(--shadow-soft);
+}
+
+.focus-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(62, 40, 95, 0.13);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(216, 183, 106, 0.22), transparent 34%),
+    rgba(255, 255, 255, 0.78);
+  box-shadow: 0 14px 28px rgba(62, 40, 95, 0.08), 0 0 28px rgba(175, 207, 180, 0.20);
+}
+
+.focus-icon::before {
+  width: 30px;
+  height: 30px;
+  content: "";
+}
+
+.focus-icon-matrix::before {
+  background:
+    radial-gradient(circle at 15% 15%, var(--deep-purple) 0 2px, transparent 3px),
+    radial-gradient(circle at 50% 15%, var(--sage-ink) 0 2px, transparent 3px),
+    radial-gradient(circle at 85% 15%, var(--deep-purple) 0 2px, transparent 3px),
+    radial-gradient(circle at 15% 50%, var(--sage-ink) 0 2px, transparent 3px),
+    radial-gradient(circle at 50% 50%, var(--soft-gold) 0 4px, transparent 5px),
+    radial-gradient(circle at 85% 50%, var(--sage-ink) 0 2px, transparent 3px),
+    radial-gradient(circle at 15% 85%, var(--deep-purple) 0 2px, transparent 3px),
+    radial-gradient(circle at 50% 85%, var(--sage-ink) 0 2px, transparent 3px),
+    radial-gradient(circle at 85% 85%, var(--deep-purple) 0 2px, transparent 3px);
+}
+
+.focus-icon-energy::before {
+  border: 2px solid rgba(62, 40, 95, 0.70);
+  border-inline-color: rgba(74, 116, 85, 0.74);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 8px rgba(234, 245, 236, 0.95), 0 0 0 5px rgba(237, 228, 245, 0.68);
+}
+
+.focus-icon-language::before {
+  border-radius: 50%;
+  background:
+    linear-gradient(90deg, transparent 46%, rgba(62, 40, 95, 0.60) 47% 53%, transparent 54%),
+    linear-gradient(0deg, transparent 46%, rgba(62, 40, 95, 0.42) 47% 53%, transparent 54%),
+    radial-gradient(circle, transparent 45%, rgba(74, 116, 85, 0.72) 46% 54%, transparent 55%);
+}
+
+.focus-card h3 {
+  margin: 0;
+}
+
+.focus-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.72;
 }
 
 .action-section {
@@ -1028,6 +1122,55 @@ h3 {
 
 .language-option.is-active span {
   background: rgba(255, 255, 255, 0.16);
+}
+
+.faq-section {
+  border-block-start: 1px solid rgba(62, 40, 95, 0.08);
+  background:
+    radial-gradient(circle at 12% 10%, rgba(175, 207, 180, 0.22), transparent 18rem),
+    linear-gradient(180deg, rgba(255, 253, 247, 0.72), rgba(237, 228, 245, 0.34));
+}
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(360px, 1.18fr);
+  gap: 42px;
+  align-items: start;
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-list details {
+  border: 1px solid rgba(62, 40, 95, 0.12);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 14px 30px rgba(62, 40, 95, 0.055);
+}
+
+.faq-list summary {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  color: var(--deep-purple);
+  font-weight: 850;
+  line-height: 1.35;
+  cursor: pointer;
+}
+
+.faq-list summary::marker {
+  color: var(--sage-ink);
+}
+
+.faq-list details p {
+  margin: 0;
+  padding: 0 18px 20px;
+  color: var(--muted);
+  line-height: 1.72;
 }
 
 .contact-section {
@@ -1417,7 +1560,9 @@ h3 {
 
   .language-layout,
   .contact-layout,
-  .action-grid {
+  .action-grid,
+  .focus-grid,
+  .faq-layout {
     grid-template-columns: 1fr;
     gap: 30px;
   }
@@ -1510,22 +1655,25 @@ h3 {
   }
 
   .nav-links {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 6px 8px;
-    overflow-x: visible;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 12px;
+    overflow-x: auto;
     font-size: 12px;
+    scrollbar-width: thin;
   }
 
   .nav-links a {
-    padding: 8px 4px;
-    text-align: center;
+    flex: 0 0 auto;
+    padding: 8px 0;
+    text-align: start;
     line-height: 1.2;
-    white-space: normal;
+    white-space: nowrap;
   }
 
   .nav-links a::after {
-    inset-inline: 18%;
+    inset-inline: 0;
   }
 
   .header-actions {
