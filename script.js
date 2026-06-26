@@ -130,6 +130,42 @@ Questo progetto viene creato con grande responsabilità, cura per le persone e u
 本活动与医学无关，不构成医疗服务，也不能替代医疗帮助、诊断、心理治疗或治疗。本网站展示的所有材料、咨询和灵性实践仅用于信息、灵性和介绍性目的。
 我们相信，灵性发展、自我发现以及对自身内在能量的理解，可以帮助人们更好地了解自己，做出更有意识的决定，并找到内在和谐。
 本项目正在以高度的责任感、对人的关怀以及真诚的愿望创建，旨在建立一个用于灵性探索、理解和发展的国际空间。`,
+  nl: `Welkom bij het internationale project dat is gewijd aan de psychomatrix, spirituele ontwikkeling, zelfontdekking en verschillende esoterische gebieden.
+Deze website is opgericht als een van de eerste internationale sociale projecten op het gebied van de psychomatrix en esoterie, met als doel mensen samen te brengen die geïnteresseerd zijn in spirituele ontwikkeling, energiepraktijken, innerlijke harmonie en het vinden van antwoorden op belangrijke levensvragen.
+Op deze website kun je verschillende gebieden verkennen, waaronder:
+* de psychomatrix en persoonlijkheidsanalyse;
+* spirituele praktijken en zelfontdekking;
+* reiniging van negatieve energie;
+* exorcismegebeden en spirituele bescherming;
+* helderziendheid en intuïtieve consultaties;
+* energiepraktijken;
+* spirituele ondersteuning en andere verwante gebieden.
+Ons doel is een ruimte te creëren waar mensen informatie, steun, begrip en de mogelijkheid kunnen ontvangen om hun leven vanuit een nieuw perspectief te bekijken, zichzelf beter te begrijpen, hun sterke kanten, innerlijke hulpbronnen en levenspad te ontdekken.
+Voor het gemak van een internationaal publiek zal de website beschikbaar zijn in meerdere talen: Duits, Frans, Engels, Spaans, Italiaans, Arabisch, Chinees en Luxemburgs.
+Het ontwerp van de website zal lichte groene en paarse tinten bevatten, die harmonie, innerlijke rust, spirituele groei, intuïtie en balans symboliseren.
+De eerste volledige consultatie zal volledig gratis zijn, zodat iedereen kennis kan maken met het project, vragen kan stellen en een eerste consultatie kan ervaren. Vanaf de tweede consultatie worden de diensten op betaalde basis aangeboden.
+Belangrijk:
+Deze activiteit is niet gerelateerd aan geneeskunde, vormt geen medische dienst en vervangt geen medische hulp, diagnose, psychotherapie of behandeling. Alle materialen, consultaties en spirituele praktijken die op deze website worden gepresenteerd, zijn uitsluitend bedoeld voor informatieve, spirituele en kennismakingsdoeleinden.
+Wij geloven dat spirituele ontwikkeling, zelfontdekking en het begrijpen van de eigen innerlijke energie mensen kunnen helpen zichzelf beter te begrijpen, bewustere beslissingen te nemen en innerlijke harmonie te vinden.
+Dit project wordt gecreëerd met grote verantwoordelijkheid, zorg voor mensen en een oprechte wens om een internationale ruimte te bouwen voor spirituele verkenning, begrip en ontwikkeling.`,
+  pl: `Witamy w międzynarodowym projekcie poświęconym psychomatrycy, rozwojowi duchowemu, samopoznaniu oraz różnym dziedzinom ezoterycznym.
+Ta strona internetowa została stworzona jako jeden z pierwszych międzynarodowych projektów społecznych w dziedzinie psychomatrycy i ezoteryki, w celu połączenia osób zainteresowanych rozwojem duchowym, praktykami energetycznymi, wewnętrzną harmonią oraz poszukiwaniem odpowiedzi na ważne pytania życiowe.
+Na tej stronie będzie można poznać różne obszary, w tym:
+* psychomatrycę i analizę osobowości;
+* praktyki duchowe i samopoznanie;
+* oczyszczanie z negatywnej energii;
+* modlitwy egzorcyzmujące i ochronę duchową;
+* jasnowidzenie i konsultacje intuicyjne;
+* praktyki energetyczne;
+* wsparcie duchowe i inne powiązane dziedziny.
+Naszym celem jest stworzenie przestrzeni, w której ludzie mogą otrzymać informacje, wsparcie, zrozumienie oraz możliwość spojrzenia na swoje życie z nowej perspektywy, lepszego zrozumienia siebie, odkrycia swoich mocnych stron, wewnętrznych zasobów i drogi życiowej.
+Dla wygody międzynarodowych odbiorców strona będzie dostępna w kilku językach: niemieckim, francuskim, angielskim, hiszpańskim, włoskim, arabskim, chińskim i luksemburskim.
+Projekt strony będzie wykorzystywał jasne odcienie zieleni i fioletu, symbolizujące harmonię, wewnętrzny spokój, rozwój duchowy, intuicję i równowagę.
+Pierwsza pełna konsultacja będzie całkowicie bezpłatna, aby każdy mógł zapoznać się z projektem, zadać pytania i doświadczyć wstępnej konsultacji. Od drugiej konsultacji usługi będą świadczone odpłatnie.
+Ważne:
+Ta działalność nie jest związana z medycyną, nie stanowi usługi medycznej i nie zastępuje pomocy medycznej, diagnozy, psychoterapii ani leczenia. Wszystkie materiały, konsultacje i praktyki duchowe przedstawione na tej stronie są przeznaczone wyłącznie do celów informacyjnych, duchowych i wprowadzających.
+Wierzymy, że rozwój duchowy, samopoznanie i zrozumienie własnej wewnętrznej energii mogą pomóc ludziom lepiej zrozumieć siebie, podejmować bardziej świadome decyzje i odnaleźć wewnętrzną harmonię.
+Ten projekt powstaje z wielką odpowiedzialnością, troską o ludzi i szczerą chęcią zbudowania międzynarodowej przestrzeni dla duchowych poszukiwań, zrozumienia i rozwoju.`,
   lb: `Wëllkomm beim internationale Projet, deen der Psychomatrix, der spiritueller Entwécklung, der Selbstentdeckung an verschiddenen esoteresche Beräicher gewidmet ass.
 Dës Websäit gouf als ee vun den éischten internationale soziale Projeten am Beräich vun der Psychomatrix an der Esoterik erstallt, mam Zil Leit zesummenzebréngen, déi sech fir spirituell Entwécklung, Energiepraktiken, bannescht Harmonie an d’Sich no Äntwerten op wichteg Liewensfroen interesséieren.
 Op dëser Websäit kënnt Dir verschidde Beräicher entdecken, dorënner:
@@ -169,7 +205,7 @@ const translations = {
     secondaryCta: "Contact EnneaLuma",
     heroNote: "The first full consultation is free.",
     trustFree: "First consultation free",
-    trustLanguages: "8 languages",
+    trustLanguages: "10 languages",
     trustSupport: "Spiritual support",
     trustNotice: "Not a medical service",
     officialTitle: "Official Project Introduction",
@@ -225,7 +261,7 @@ const translations = {
     secondaryCta: "EnneaLuma kontaktieren",
     heroNote: "Die erste vollständige Beratung ist kostenlos.",
     trustFree: "Erste Beratung kostenlos",
-    trustLanguages: "8 Sprachen",
+    trustLanguages: "10 Sprachen",
     trustSupport: "Spirituelle Unterstützung",
     trustNotice: "Kein medizinischer Service",
     officialTitle: "Offizielle Projektvorstellung",
@@ -281,7 +317,7 @@ const translations = {
     secondaryCta: "Contacter EnneaLuma",
     heroNote: "La première consultation complète est gratuite.",
     trustFree: "Première consultation gratuite",
-    trustLanguages: "8 langues",
+    trustLanguages: "10 langues",
     trustSupport: "Soutien spirituel",
     trustNotice: "Pas un service médical",
     officialTitle: "Présentation officielle du projet",
@@ -337,7 +373,7 @@ const translations = {
     secondaryCta: "Contactar con EnneaLuma",
     heroNote: "La primera consulta completa es gratuita.",
     trustFree: "Primera consulta gratis",
-    trustLanguages: "8 idiomas",
+    trustLanguages: "10 idiomas",
     trustSupport: "Apoyo espiritual",
     trustNotice: "No es un servicio médico",
     officialTitle: "Presentación oficial del proyecto",
@@ -393,7 +429,7 @@ const translations = {
     secondaryCta: "Contatta EnneaLuma",
     heroNote: "La prima consultazione completa è gratuita.",
     trustFree: "Prima consultazione gratuita",
-    trustLanguages: "8 lingue",
+    trustLanguages: "10 lingue",
     trustSupport: "Supporto spirituale",
     trustNotice: "Non è un servizio medico",
     officialTitle: "Presentazione ufficiale del progetto",
@@ -449,7 +485,7 @@ const translations = {
     secondaryCta: "تواصل مع EnneaLuma",
     heroNote: "الاستشارة الكاملة الأولى مجانية.",
     trustFree: "الاستشارة الأولى مجانية",
-    trustLanguages: "8 لغات",
+    trustLanguages: "10 لغات",
     trustSupport: "دعم روحي",
     trustNotice: "ليس خدمة طبية",
     officialTitle: "النص الرسمي للمشروع",
@@ -505,7 +541,7 @@ const translations = {
     secondaryCta: "联系 EnneaLuma",
     heroNote: "首次完整咨询免费。",
     trustFree: "首次咨询免费",
-    trustLanguages: "8 种语言",
+    trustLanguages: "10 种语言",
     trustSupport: "灵性支持",
     trustNotice: "非医疗服务",
     officialTitle: "项目官方文本",
@@ -543,6 +579,118 @@ const translations = {
     requestSubject: "申请首次免费咨询",
     contactSubject: "联系 EnneaLuma"
   },
+  nl: {
+    documentTitle: "EnneaLuma | Psychomatrix, helderheid en innerlijke balans",
+    metaDescription: "EnneaLuma is een internationaal project voor psychomatrix en spirituele verkenning, gericht op helderheid, zelfontdekking en innerlijke balans.",
+    tagline: "Psychomatrix, helderheid en innerlijke balans",
+    navHome: "Home",
+    navLanguages: "Talen",
+    navOfficial: "Officiële tekst",
+    navConsultation: "Gratis consultatie",
+    navPayment: "Betaling",
+    navContact: "Contact",
+    languageLabel: "Taal",
+    heroEyebrow: "Internationaal spiritueel project",
+    heroLead: "Een internationale ruimte voor psychomatrix, spirituele ontwikkeling, zelfontdekking en innerlijke harmonie.",
+    primaryCta: "Vraag een gratis eerste consultatie aan",
+    primaryCtaShort: "Gratis consultatie",
+    secondaryCta: "Neem contact op met EnneaLuma",
+    heroNote: "De eerste volledige consultatie is gratis.",
+    trustFree: "Eerste consultatie gratis",
+    trustLanguages: "10 talen",
+    trustSupport: "Spirituele ondersteuning",
+    trustNotice: "Geen medische dienst",
+    officialTitle: "Officiële projectintroductie",
+    officialIntro: "Gebruik de taalselector om deze projecttekst in elke ondersteunde taal te lezen.",
+    officialText: officialTexts.nl,
+    storyTitle: "Een rustige ruimte voor spirituele verkenning",
+    storyBody: "Zachte visuele momenten voor innerlijke helderheid, spirituele ontwikkeling en energiebalans.",
+    storyClarity: "Innerlijke helderheid",
+    storyDevelopment: "Spirituele ontwikkeling",
+    storyBalance: "Energiebalans",
+    consultationTitle: "Gratis consultatie",
+    consultationBody: "De eerste volledige consultatie is gratis. Stel vragen, leer het project kennen en ervaar een eerste consultatie.",
+    consultationCardTitle: "Eerste volledige consultatie gratis",
+    consultationCardBody: "De eerste volledige consultatie is volledig gratis. Je kunt kennismaken met het project, vragen stellen en een eerste consultatie ervaren.",
+    emailFallback: "Als de knop je e-mailapp niet opent, stuur je bericht dan rechtstreeks naar info@ennealuma.com.",
+    requestByEmail: "Aanvragen per e-mail",
+    secondConsultationTitle: "Vanaf de tweede consultatie",
+    secondConsultationBody: "Vanaf de tweede consultatie zijn de diensten betaald.",
+    paymentTitle: "Betaling via PayPal",
+    paymentBody: "De eerste volledige consultatie is gratis. Vanaf de tweede consultatie worden de diensten op betaalde basis aangeboden. Betalingen kunnen na bevestiging per e-mail via PayPal worden gedaan.",
+    paymentCardTitle: "Betaling voor vervolgconsultaties",
+    paymentCardBody: "Vanaf de tweede consultatie worden de diensten op betaalde basis aangeboden. Betalingen kunnen na bevestiging per e-mail via PayPal worden gedaan.",
+    paymentNote: "Gebruik deze PayPal.Me-link nadat de betaalde consultatie per e-mail is bevestigd.",
+    paypalCta: "Betaal met PayPal",
+    languagesTitle: "Taalselector",
+    languagesBody: "Kies je voorkeurstaal voor de interface. De projecttekst verandert met de geselecteerde taal.",
+    contactTitle: "Contact",
+    contactBody: "Voor communicatie en consultatieverzoeken schrijf je naar info@ennealuma.com.",
+    emailLabel: "E-mail",
+    medicalTitle: "Medische disclaimer",
+    importantNoticeTitle: "Belangrijke mededeling",
+    medicalDisclaimer: "EnneaLuma is niet gerelateerd aan geneeskunde, vormt geen medische dienst en vervangt geen medische hulp, diagnose, psychotherapie of behandeling.",
+    footerText: "Internationaal project voor psychomatrix en spirituele verkenning.",
+    footerDisclaimer: "Geen medische dienst.",
+    requestSubject: "Gratis eerste consultatie aanvragen",
+    contactSubject: "Contact met EnneaLuma"
+  },
+  pl: {
+    documentTitle: "EnneaLuma | Psychomatryca, jasność i wewnętrzna równowaga",
+    metaDescription: "EnneaLuma to międzynarodowy projekt psychomatrycy i duchowych poszukiwań, skupiony na jasności, samopoznaniu i wewnętrznej równowadze.",
+    tagline: "Psychomatryca, jasność i wewnętrzna równowaga",
+    navHome: "Strona główna",
+    navLanguages: "Języki",
+    navOfficial: "Tekst oficjalny",
+    navConsultation: "Bezpłatna konsultacja",
+    navPayment: "Płatność",
+    navContact: "Kontakt",
+    languageLabel: "Język",
+    heroEyebrow: "Międzynarodowy projekt duchowy",
+    heroLead: "Międzynarodowa przestrzeń dla psychomatrycy, rozwoju duchowego, samopoznania i wewnętrznej harmonii.",
+    primaryCta: "Poproś o bezpłatną pierwszą konsultację",
+    primaryCtaShort: "Bezpłatna konsultacja",
+    secondaryCta: "Skontaktuj się z EnneaLuma",
+    heroNote: "Pierwsza pełna konsultacja jest bezpłatna.",
+    trustFree: "Pierwsza konsultacja bezpłatna",
+    trustLanguages: "10 języków",
+    trustSupport: "Wsparcie duchowe",
+    trustNotice: "To nie jest usługa medyczna",
+    officialTitle: "Oficjalne wprowadzenie do projektu",
+    officialIntro: "Użyj selektora języka, aby przeczytać ten tekst projektu w każdym obsługiwanym języku.",
+    officialText: officialTexts.pl,
+    storyTitle: "Spokojna przestrzeń do duchowych poszukiwań",
+    storyBody: "Delikatne momenty wizualne dla wewnętrznej jasności, rozwoju duchowego i równowagi energetycznej.",
+    storyClarity: "Wewnętrzna jasność",
+    storyDevelopment: "Rozwój duchowy",
+    storyBalance: "Równowaga energetyczna",
+    consultationTitle: "Bezpłatna konsultacja",
+    consultationBody: "Pierwsza pełna konsultacja jest bezpłatna. Zadawaj pytania, poznaj projekt i doświadcz wstępnej konsultacji.",
+    consultationCardTitle: "Pierwsza pełna konsultacja bezpłatna",
+    consultationCardBody: "Pierwsza pełna konsultacja jest całkowicie bezpłatna. Możesz poznać projekt, zadać pytania i doświadczyć wstępnej konsultacji.",
+    emailFallback: "Jeśli przycisk nie otworzy aplikacji e-mail, wyślij wiadomość bezpośrednio na info@ennealuma.com.",
+    requestByEmail: "Poproś e-mailem",
+    secondConsultationTitle: "Od drugiej konsultacji",
+    secondConsultationBody: "Od drugiej konsultacji usługi są płatne.",
+    paymentTitle: "Płatność przez PayPal",
+    paymentBody: "Pierwsza pełna konsultacja jest bezpłatna. Od drugiej konsultacji usługi są świadczone odpłatnie. Płatności można dokonać przez PayPal po potwierdzeniu e-mailem.",
+    paymentCardTitle: "Płatność za kolejne konsultacje",
+    paymentCardBody: "Od drugiej konsultacji usługi są świadczone odpłatnie. Płatności można dokonać przez PayPal po potwierdzeniu e-mailem.",
+    paymentNote: "Użyj tego linku PayPal.Me po potwierdzeniu płatnej konsultacji e-mailem.",
+    paypalCta: "Zapłać przez PayPal",
+    languagesTitle: "Selektor języka",
+    languagesBody: "Wybierz preferowany język interfejsu. Tekst projektu zmienia się wraz z wybranym językiem.",
+    contactTitle: "Kontakt",
+    contactBody: "W sprawach komunikacji i próśb o konsultację napisz na info@ennealuma.com.",
+    emailLabel: "E-mail",
+    medicalTitle: "Zastrzeżenie medyczne",
+    importantNoticeTitle: "Ważna informacja",
+    medicalDisclaimer: "EnneaLuma nie jest związana z medycyną, nie stanowi usługi medycznej i nie zastępuje pomocy medycznej, diagnozy, psychoterapii ani leczenia.",
+    footerText: "Międzynarodowy projekt psychomatrycy i duchowych poszukiwań.",
+    footerDisclaimer: "To nie jest usługa medyczna.",
+    requestSubject: "Prośba o bezpłatną pierwszą konsultację",
+    contactSubject: "Kontakt z EnneaLuma"
+  },
   lb: {
     documentTitle: "EnneaLuma | Psychomatrix, Kloerheet an bannescht Gläichgewiicht",
     metaDescription: "EnneaLuma ass en internationale Projet fir Psychomatrix a spirituell Exploratioun mat Fokus op Kloerheet, Selbsterkenntnis a bannescht Gläichgewiicht.",
@@ -561,7 +709,7 @@ const translations = {
     secondaryCta: "EnneaLuma kontaktéieren",
     heroNote: "Déi éischt voll Consultatioun ass gratis.",
     trustFree: "Éischt Consultatioun gratis",
-    trustLanguages: "8 Sproochen",
+    trustLanguages: "10 Sproochen",
     trustSupport: "Spirituell Ënnerstëtzung",
     trustNotice: "Kee medezinesche Service",
     officialTitle: "Offizielle Projetstext",
@@ -618,6 +766,8 @@ const languageCodes = {
   it: "IT",
   ar: "AR",
   zh: "中文",
+  nl: "NL",
+  pl: "PL",
   lb: "LB"
 };
 
@@ -629,6 +779,8 @@ const languageFlagSources = {
   it: "assets/flags/it.svg?v=20260612-1",
   ar: "assets/flags/sa.svg?v=20260612-1",
   zh: "assets/flags/cn.svg?v=20260612-1",
+  nl: "assets/flags/nl.svg?v=20260626-1",
+  pl: "assets/flags/pl.svg?v=20260626-1",
   lb: "assets/flags/lu.svg?v=20260612-1"
 };
 
