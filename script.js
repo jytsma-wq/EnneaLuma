@@ -56,7 +56,7 @@ On this website, you will be able to explore various areas, including:
 * energy practices;
 * spiritual support and other related fields.
 Our goal is to create a space where people can receive information, support, understanding, and the opportunity to look at their lives from a new perspective, better understand themselves, discover their strengths, inner resources, and life path.
-For the convenience of an international audience, the website will be available in several languages: German, French, English, Spanish, Italian, Arabic, Chinese, and Luxembourgish.
+For the convenience of an international audience, the website will be available in several languages: German, French, English, Spanish, Italian, Arabic, Chinese, Dutch, Polish, and Luxembourgish.
 The website design will feature light green and purple tones, symbolizing harmony, inner peace, spiritual growth, intuition, and balance.
 The first full consultation will be completely free of charge so that everyone can become familiar with the project, ask questions, and experience an initial consultation. Starting from the second consultation, services will be provided on a paid basis.
 Important:
@@ -74,7 +74,7 @@ Auf dieser Website können Sie verschiedene Bereiche erkunden, darunter:
 * Energiepraktiken;
 * spirituelle Unterstützung und andere verwandte Bereiche.
 Unser Ziel ist es, einen Raum zu schaffen, in dem Menschen Informationen, Unterstützung, Verständnis und die Möglichkeit erhalten können, ihr Leben aus einer neuen Perspektive zu betrachten, sich selbst besser zu verstehen, ihre Stärken, inneren Ressourcen und ihren Lebensweg zu entdecken.
-Für die Bequemlichkeit eines internationalen Publikums wird die Website in mehreren Sprachen verfügbar sein: Deutsch, Französisch, Englisch, Spanisch, Italienisch, Arabisch, Chinesisch und Luxemburgisch.
+Für die Bequemlichkeit eines internationalen Publikums wird die Website in mehreren Sprachen verfügbar sein: Deutsch, Französisch, Englisch, Spanisch, Italienisch, Arabisch, Chinesisch, Niederländisch, Polnisch und Luxemburgisch.
 Das Website-Design wird helle Grün- und Violetttöne enthalten, die Harmonie, inneren Frieden, spirituelles Wachstum, Intuition und Balance symbolisieren.
 Die erste vollständige Beratung wird völlig kostenlos sein, damit jeder das Projekt kennenlernen, Fragen stellen und eine erste Beratung erleben kann. Ab der zweiten Beratung werden die Leistungen kostenpflichtig angeboten.
 Wichtig:
@@ -92,7 +92,7 @@ Sur ce site web, vous pourrez explorer différents domaines, notamment :
 * les pratiques énergétiques ;
 * le soutien spirituel et d’autres domaines connexes.
 Notre objectif est de créer un espace où les personnes peuvent recevoir des informations, du soutien, de la compréhension et la possibilité de regarder leur vie sous un nouvel angle, de mieux se comprendre, de découvrir leurs forces, leurs ressources intérieures et leur chemin de vie.
-Pour le confort d’un public international, le site web sera disponible en plusieurs langues : allemand, français, anglais, espagnol, italien, arabe, chinois et luxembourgeois.
+Pour le confort d’un public international, le site web sera disponible en plusieurs langues : allemand, français, anglais, espagnol, italien, arabe, chinois, néerlandais, polonais et luxembourgeois.
 Le design du site web utilisera des tons vert clair et violets, symbolisant l’harmonie, la paix intérieure, la croissance spirituelle, l’intuition et l’équilibre.
 La première consultation complète sera entièrement gratuite afin que chacun puisse se familiariser avec le projet, poser des questions et vivre une première consultation. À partir de la deuxième consultation, les services seront fournis sur une base payante.
 Important :
@@ -110,7 +110,7 @@ En este sitio web podrás explorar diversas áreas, entre ellas:
 * prácticas energéticas;
 * apoyo espiritual y otros campos relacionados.
 Nuestro objetivo es crear un espacio donde las personas puedan recibir información, apoyo, comprensión y la oportunidad de mirar su vida desde una nueva perspectiva, comprenderse mejor, descubrir sus fortalezas, recursos internos y camino de vida.
-Para la comodidad de una audiencia internacional, el sitio web estará disponible en varios idiomas: alemán, francés, inglés, español, italiano, árabe, chino y luxemburgués.
+Para la comodidad de una audiencia internacional, el sitio web estará disponible en varios idiomas: alemán, francés, inglés, español, italiano, árabe, chino, neerlandés, polaco y luxemburgués.
 El diseño del sitio web presentará tonos verde claro y púrpura, que simbolizan armonía, paz interior, crecimiento espiritual, intuición y equilibrio.
 La primera consulta completa será totalmente gratuita para que todos puedan familiarizarse con el proyecto, hacer preguntas y experimentar una consulta inicial. A partir de la segunda consulta, los servicios se prestarán de forma pagada.
 Importante:
@@ -128,7 +128,7 @@ Su questo sito web potrai esplorare diverse aree, tra cui:
 * pratiche energetiche;
 * supporto spirituale e altri ambiti correlati.
 Il nostro obiettivo è creare uno spazio in cui le persone possano ricevere informazioni, supporto, comprensione e l’opportunità di guardare la propria vita da una nuova prospettiva, comprendere meglio se stesse, scoprire i propri punti di forza, le risorse interiori e il percorso di vita.
-Per la comodità di un pubblico internazionale, il sito web sarà disponibile in diverse lingue: tedesco, francese, inglese, spagnolo, italiano, arabo, cinese e lussemburghese.
+Per la comodità di un pubblico internazionale, il sito web sarà disponibile in diverse lingue: tedesco, francese, inglese, spagnolo, italiano, arabo, cinese, olandese, polacco e lussemburghese.
 Il design del sito web presenterà toni verde chiaro e viola, che simboleggiano armonia, pace interiore, crescita spirituale, intuizione ed equilibrio.
 La prima consultazione completa sarà completamente gratuita affinché tutti possano familiarizzare con il progetto, fare domande e vivere una consultazione iniziale. A partire dalla seconda consultazione, i servizi saranno forniti a pagamento.
 Importante:
@@ -146,7 +146,7 @@ Questo progetto viene creato con grande responsabilità, cura per le persone e u
 * ممارسات الطاقة؛
 * الدعم الروحي ومجالات أخرى ذات صلة.
 هدفنا هو إنشاء مساحة يستطيع فيها الناس تلقي المعلومات والدعم والتفهم، والحصول على فرصة للنظر إلى حياتهم من منظور جديد، وفهم أنفسهم بشكل أفضل، واكتشاف نقاط قوتهم ومواردهم الداخلية ومسار حياتهم.
-من أجل راحة الجمهور الدولي، سيكون الموقع متاحًا بعدة لغات: الألمانية، والفرنسية، والإنجليزية، والإسبانية، والإيطالية، والعربية، والصينية، واللوكسمبورغية.
+من أجل راحة الجمهور الدولي، سيكون الموقع متاحًا بعدة لغات: الألمانية، والفرنسية، والإنجليزية، والإسبانية، والإيطالية، والعربية، والصينية، والهولندية، والبولندية، واللوكسمبورغية.
 سيتميز تصميم الموقع بدرجات من الأخضر الفاتح والبنفسجي، ترمز إلى الانسجام، والسلام الداخلي، والنمو الروحي، والحدس، والتوازن.
 ستكون الاستشارة الكاملة الأولى مجانية تمامًا حتى يتمكن الجميع من التعرف إلى المشروع، وطرح الأسئلة، وتجربة استشارة أولية. ابتداءً من الاستشارة الثانية، ستُقدَّم الخدمات على أساس مدفوع.
 مهم:
@@ -164,7 +164,7 @@ Questo progetto viene creato con grande responsabilità, cura per le persone e u
 * 能量实践；
 * 灵性支持及其他相关领域。
 我们的目标是创建一个空间，让人们能够获得信息、支持、理解，并有机会从新的角度看待自己的生活，更好地了解自己，发现自己的优势、内在资源和人生道路。
-为了方便国际受众，本网站将提供多种语言版本：德语、法语、英语、西班牙语、意大利语、阿拉伯语、中文和卢森堡语。
+为了方便国际受众，本网站将提供多种语言版本：德语、法语、英语、西班牙语、意大利语、阿拉伯语、中文、荷兰语、波兰语和卢森堡语。
 网站设计将采用浅绿色和紫色调，象征和谐、内在平静、灵性成长、直觉和平衡。
 第一次完整咨询将完全免费，以便每个人都能熟悉该项目、提出问题并体验初始咨询。从第二次咨询开始，服务将以付费方式提供。
 重要：
@@ -182,7 +182,7 @@ Op deze website kun je verschillende gebieden verkennen, waaronder:
 * energiepraktijken;
 * spirituele ondersteuning en andere verwante gebieden.
 Ons doel is een ruimte te creëren waar mensen informatie, steun, begrip en de mogelijkheid kunnen ontvangen om hun leven vanuit een nieuw perspectief te bekijken, zichzelf beter te begrijpen, hun sterke kanten, innerlijke hulpbronnen en levenspad te ontdekken.
-Voor het gemak van een internationaal publiek zal de website beschikbaar zijn in meerdere talen: Duits, Frans, Engels, Spaans, Italiaans, Arabisch, Chinees en Luxemburgs.
+Voor het gemak van een internationaal publiek zal de website beschikbaar zijn in meerdere talen: Duits, Frans, Engels, Spaans, Italiaans, Arabisch, Chinees, Nederlands, Pools en Luxemburgs.
 Het ontwerp van de website zal lichte groene en paarse tinten bevatten, die harmonie, innerlijke rust, spirituele groei, intuïtie en balans symboliseren.
 De eerste volledige consultatie zal volledig gratis zijn, zodat iedereen kennis kan maken met het project, vragen kan stellen en een eerste consultatie kan ervaren. Vanaf de tweede consultatie worden de diensten op betaalde basis aangeboden.
 Belangrijk:
@@ -200,7 +200,7 @@ Na tej stronie będzie można poznać różne obszary, w tym:
 * praktyki energetyczne;
 * wsparcie duchowe i inne powiązane dziedziny.
 Naszym celem jest stworzenie przestrzeni, w której ludzie mogą otrzymać informacje, wsparcie, zrozumienie oraz możliwość spojrzenia na swoje życie z nowej perspektywy, lepszego zrozumienia siebie, odkrycia swoich mocnych stron, wewnętrznych zasobów i drogi życiowej.
-Dla wygody międzynarodowych odbiorców strona będzie dostępna w kilku językach: niemieckim, francuskim, angielskim, hiszpańskim, włoskim, arabskim, chińskim i luksemburskim.
+Dla wygody międzynarodowych odbiorców strona będzie dostępna w kilku językach: niemieckim, francuskim, angielskim, hiszpańskim, włoskim, arabskim, chińskim, niderlandzkim, polskim i luksemburskim.
 Projekt strony będzie wykorzystywał jasne odcienie zieleni i fioletu, symbolizujące harmonię, wewnętrzny spokój, rozwój duchowy, intuicję i równowagę.
 Pierwsza pełna konsultacja będzie całkowicie bezpłatna, aby każdy mógł zapoznać się z projektem, zadać pytania i doświadczyć wstępnej konsultacji. Od drugiej konsultacji usługi będą świadczone odpłatnie.
 Ważne:
@@ -218,7 +218,7 @@ Op dëser Websäit kënnt Dir verschidde Beräicher entdecken, dorënner:
 * Energiepraktiken;
 * spirituell Ënnerstëtzung an aner verbonnen Beräicher.
 Eist Zil ass et, e Raum ze schafen, wou Leit Informatioun, Ënnerstëtzung, Verständnis an d’Méiglechkeet kréien, hiert Liewen aus enger neier Perspektiv ze kucken, sech selwer besser ze verstoen, hir Stäerkten, bannenzeg Ressourcen an hire Liewenswee ze entdecken.
-Fir de Komfort vun engem internationale Publikum wäert d’Websäit a verschiddene Sprooche verfügbar sinn: Däitsch, Franséisch, Englesch, Spuenesch, Italienesch, Arabesch, Chinesesch a Lëtzebuergesch.
+Fir de Komfort vun engem internationale Publikum wäert d’Websäit a verschiddene Sprooche verfügbar sinn: Däitsch, Franséisch, Englesch, Spuenesch, Italienesch, Arabesch, Chinesesch, Hollännesch, Polnesch a Lëtzebuergesch.
 Den Design vun der Websäit wäert hellgréng a violett Téin enthalen, déi Harmonie, bannesche Fridden, spirituellt Wuesstem, Intuitioun a Gläichgewiicht symboliséieren.
 Déi éischt voll Consultatioun wäert komplett gratis sinn, fir datt jidderee sech mam Projet vertraut maache kann, Froen stelle kann an eng éischt Consultatioun erliewe kann. Vun der zweeter Consultatioun un ginn d’Servicer op bezuelter Basis ugebueden.
 Wichteg:
