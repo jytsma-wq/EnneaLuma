@@ -4,6 +4,7 @@
   "private": true,
   "description": "Static EnneaLuma landing page served for Hostinger Node.js GitHub deployment.",
   "scripts": {
+    "check:i18n": "node scripts/check-i18n.mjs",
     "start": "node server.js"
   },
   "engines": {
