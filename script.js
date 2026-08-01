@@ -1,7 +1,4 @@
 const EMAIL = "info@ennealuma.com";
-const CONSULTATION_SUBJECT = "Free%20Consultation%20Request";
-const CONSULTATION_BODY = "Hello%20EnneaLuma%2C%0A%0AI%20would%20like%20to%20request%20my%20free%20first%20consultation.%0A%0AName%3A%0ALanguage%3A%0AMain%20question%3A%0A%0AThank%20you.";
-const CONSULTATION_MAILTO = `mailto:${EMAIL}?subject=${CONSULTATION_SUBJECT}&body=${CONSULTATION_BODY}`;
 const SITE_URL = "https://ennealuma.com/";
 const PAYPAL_URL = "https://www.paypal.me/JasperIJtsma";
 
@@ -404,7 +401,7 @@ const translations = {
     languageLabel: "Langue",
     heroEyebrow: "Projet spirituel international",
     heroLead: "Un espace international calme pour la psychomatrix, le développement spirituel, la découverte de soi et l'équilibre intérieur.",
-    primaryCta: "Demander une premiere consultation gratuite",
+    primaryCta: "Demander une première consultation gratuite",
     primaryCtaShort: "Consultation gratuite",
     secondaryCta: "Contacter EnneaLuma",
     heroNote: "La première consultation complète est gratuite.",
@@ -468,7 +465,7 @@ const translations = {
     faqLanguagesAnswer: "Le site prend en charge l'anglais, l'allemand, le français, l'espagnol, l'italien, l'arabe, le chinois, le néerlandais, le polonais et le luxembourgeois. L'arabe utilise une mise en page de droite à gauche.",
     faqMedicalQuestion: "EnneaLuma est-il un service médical ou de psychothérapie ?",
     faqMedicalAnswer: "Non. EnneaLuma n'est pas lié à la médecine, ne constitue pas un service médical et ne remplace pas l'aide médicale, le diagnostic, la psychothérapie ou le traitement.",
-    requestSubject: "Demande de premiere consultation gratuite",
+    requestSubject: "Demande de première consultation gratuite",
     contactSubject: "Contact EnneaLuma"
   },
   es: {
@@ -524,16 +521,16 @@ const translations = {
     secondConsultationTitle: "Desde la segunda consulta",
     secondConsultationBody: "A partir de la segunda consulta, los servicios son de pago.",
     paymentTitle: "Pago a través de PayPal",
-    paymentBody: "La primera consulta completa es gratuita. A partir de la segunda consulta, los servicios se ofrecen de forma pagada. Los pagos pueden realizarse a través de PayPal después de la confirmación por email.",
+    paymentBody: "La primera consulta completa es gratuita. A partir de la segunda consulta, los servicios son de pago. Los pagos pueden realizarse a través de PayPal después de la confirmación por correo electrónico.",
     paymentCardTitle: "Pago de consultas posteriores",
-    paymentCardBody: "A partir de la segunda consulta, los servicios se ofrecen de forma pagada. Los pagos pueden realizarse a través de PayPal después de la confirmación por email.",
-    paymentNote: "Usa este enlace de PayPal.Me después de confirmar la consulta pagada por email.",
+    paymentCardBody: "A partir de la segunda consulta, los servicios son de pago. Los pagos pueden realizarse a través de PayPal después de la confirmación por correo electrónico.",
+    paymentNote: "Usa este enlace de PayPal.Me después de confirmar la consulta de pago por correo electrónico.",
     paypalCta: "Pagar con PayPal",
     languagesTitle: "Selector de idioma",
     languagesBody: "Elige tu idioma de interfaz preferido. El texto del proyecto cambia con el idioma seleccionado.",
     contactTitle: "Contacto",
     contactBody: "Para comunicación y solicitudes de consulta, escribe a info@ennealuma.com.",
-    emailLabel: "Email",
+    emailLabel: "Correo electrónico",
     medicalTitle: "Aviso médico",
     importantNoticeTitle: "Aviso importante",
     medicalDisclaimer: "EnneaLuma no está relacionado con la medicina, no constituye un servicio médico y no reemplaza la asistencia médica, el diagnóstico, la psicoterapia ni el tratamiento.",
@@ -1095,12 +1092,12 @@ function languageFromUrl() {
   return lang && translations[lang] ? lang : "";
 }
 
-function mailtoHref() {
-  return CONSULTATION_MAILTO;
+function mailtoHref(subject, body) {
+  return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
-function contactMailtoHref() {
-  return CONSULTATION_MAILTO;
+function contactMailtoHref(subject, body) {
+  return mailtoHref(subject, body);
 }
 
 function localizedUrl(lang) {
@@ -1326,6 +1323,13 @@ function setLanguage(language, options = {}) {
     }
   });
 
+  document.querySelectorAll("[data-i18n-aria]").forEach((node) => {
+    const key = node.getAttribute("data-i18n-aria");
+    if (dictionary[key]) {
+      node.setAttribute("aria-label", dictionary[key]);
+    }
+  });
+
   document.querySelectorAll(".official-copy").forEach((node) => {
     node.setAttribute("lang", lang);
     node.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
@@ -1337,11 +1341,19 @@ function setLanguage(language, options = {}) {
   });
 
   document.querySelectorAll("[data-mailto]").forEach((node) => {
-    node.setAttribute("href", mailtoHref(dictionary.requestSubject));
+    node.setAttribute(
+      "href",
+      mailtoHref(dictionary.requestSubject, dictionary.consultationBody)
+    );
+    node.setAttribute("aria-label", dictionary.requestByEmail);
   });
 
   document.querySelectorAll("[data-contact-mailto]").forEach((node) => {
-    node.setAttribute("href", contactMailtoHref(dictionary.contactSubject));
+    node.setAttribute(
+      "href",
+      contactMailtoHref(dictionary.contactSubject, dictionary.contactBody)
+    );
+    node.setAttribute("aria-label", dictionary.secondaryCta);
   });
 
   document.querySelectorAll(".language-grid").forEach((node) => {
